@@ -1,12 +1,14 @@
 ---
 title: "Team"
+format: html
 ---
 
 ## Members
-- Name 1 — role (data cleaning, EDA, modeling, writing)
-- Name 2 — role
-- Name 3 — role
-- Name 4 — role
+- Zoya Akhtar
+- Saja Al Jariri
+- Mariya Dehnuwala
+- Courtney Sartor
+- Khadeeja Bandukwala
 
 ## Collaboration rules (simple)
 - Pull before you start work.

@@ -1,6 +1,6 @@
 ---
 title: "Project Title"
-subtitle: "BNFO 420 Capstone"
+subtitle: "BNFO 420 Capstone:"
 ---
 
 ## One-paragraph summary
