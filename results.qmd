@@ -6,9 +6,10 @@ title: "Results"
 Add bullet points as you go.
 
 ## Figures
-PCA Plot 
+Add figures as you generate them. Example:
 
 ```{r}
 # If using R, put code here (optional)
 
 # If using Python, put code here (optional)
+
