@@ -18,7 +18,7 @@
     "href": "proposal.html#datasets",
     "title": "Proposal",
     "section": "2 Dataset(s)",
-    "text": "2 Dataset(s)\n\nSource: Public Geo Dataset\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60\nKey variables:\nLicense/usage notes:"
+    "text": "2 Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables: Tissue type, genotype, treatment type, and gene expression measurements.\n\nLicense/usage notes: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
   },
   {
     "objectID": "proposal.html#planned-analysis",

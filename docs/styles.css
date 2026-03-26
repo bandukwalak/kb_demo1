@@ -1,0 +1,7 @@
+body,
+main,
+.content,
+.quarto-container,
+.page-layout-full {
+  background-color: #FFFFF0 !important;
+}
