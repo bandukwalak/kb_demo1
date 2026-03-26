@@ -4,21 +4,21 @@
     "href": "proposal.html",
     "title": "Proposal",
     "section": "",
-    "text": "State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
   },
   {
     "objectID": "proposal.html#research-question",
     "href": "proposal.html#research-question",
     "title": "Proposal",
     "section": "",
-    "text": "State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
   },
   {
     "objectID": "proposal.html#datasets",
     "href": "proposal.html#datasets",
     "title": "Proposal",
     "section": "2 Dataset(s)",
-    "text": "2 Dataset(s)\n\nSource:\nSample size:\nKey variables:\nLicense/usage notes:"
+    "text": "2 Dataset(s)\n\nSource: Public Geo Dataset\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60\nKey variables:\nLicense/usage notes:"
   },
   {
     "objectID": "proposal.html#planned-analysis",
@@ -60,14 +60,14 @@
     "href": "team.html",
     "title": "Team",
     "section": "",
-    "text": "Name 1 — role (data cleaning, EDA, modeling, writing)\nName 2 — role\nName 3 — role\nName 4 — role"
+    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
   },
   {
     "objectID": "team.html#members",
     "href": "team.html#members",
     "title": "Team",
     "section": "",
-    "text": "Name 1 — role (data cleaning, EDA, modeling, writing)\nName 2 — role\nName 3 — role\nName 4 — role"
+    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
   },
   {
     "objectID": "team.html#collaboration-rules-simple",

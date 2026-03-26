@@ -3,12 +3,12 @@ title: "Proposal"
 ---
 
 ## Research question
-State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and
-environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate...
+GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples.
 
 ## Dataset(s)
-- Source:
-- Sample size:
+- Source: Public Geo Dataset 
+- https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291
+- Sample size: 60 
 - Key variables:
 - License/usage notes:
 
