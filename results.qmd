@@ -6,7 +6,8 @@ title: "Results"
 Add bullet points as you go.
 
 ## Figures
-Add figures as you generate them. Example:
+Add figures as you generate them. Example: Blah. 
+
 
 ```{r}
 # If using R, put code here (optional)
