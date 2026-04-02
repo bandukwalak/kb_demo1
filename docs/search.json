@@ -18,7 +18,7 @@
     "href": "proposal.html#datasets",
     "title": "Proposal",
     "section": "2 Dataset(s)",
-    "text": "2 Dataset(s)\n\nSource: Public Geo Dataset\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60\nKey variables:\nLicense/usage notes:"
+    "text": "2 Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables: Tissue type, genotype, treatment type, and gene expression measurements.\n\nLicense/usage notes: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
   },
   {
     "objectID": "proposal.html#planned-analysis",
@@ -81,7 +81,11 @@
     "href": "index.html",
     "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
     "section": "",
+<<<<<<< HEAD
     "text": "This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) to compare gene expression patterns. Our approach involves cleaning and filtering the data, running PCA for quality control, and using the Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression across tissues."
+=======
+    "text": "This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) to compare gene expression patterns . Our approach involves cleaning and filtering the data, running PCA for quality control, and using the Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression across tissues."
+>>>>>>> 38c63755237e5afdf9f0ede283c92901bf501058
   },
   {
     "objectID": "index.html#project-roadmap-living",

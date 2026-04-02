@@ -23,10 +23,11 @@ website:
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
     number-sections: true
 
 execute:
   echo: true
-  warning: false
+  warning: false 
   message: false

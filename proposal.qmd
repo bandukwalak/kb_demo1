@@ -6,11 +6,11 @@ title: "Proposal"
 GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples.
 
 ## Dataset(s)
-- Source: Public Geo Dataset 
-- https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291
-- Sample size: 60 
-- Key variables:
-- License/usage notes:
+- Source: NCBI GEO Public Dataset (GSE293291)
+- https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291 
+- Sample size: 60 samples
+- Key variables: Tissue type, genotype, treatment type, and gene expression measurements.  
+- License/usage notes: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data.
 
 ## Planned analysis
 Describe your plan in bullets:
