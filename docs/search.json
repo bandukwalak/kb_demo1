@@ -53,7 +53,7 @@
     "href": "results.html#figures",
     "title": "Results",
     "section": "0.2 Figures",
-    "text": "0.2 Figures\nAdd figures as you generate them. Example:"
+    "text": "0.2 Figures\nAdd figures as you generate them. Example: Blah."
   },
   {
     "objectID": "team.html",
@@ -79,29 +79,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Project Title",
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
     "section": "",
-    "text": "Write 4–6 sentences describing: - the problem or question - the dataset(s) - your approach (methods) - what you will deliver (figures, model, dashboard, etc.)"
-  },
-  {
-    "objectID": "index.html#one-paragraph-summary",
-    "href": "index.html#one-paragraph-summary",
-    "title": "Project Title",
-    "section": "",
-    "text": "Write 4–6 sentences describing: - the problem or question - the dataset(s) - your approach (methods) - what you will deliver (figures, model, dashboard, etc.)"
+    "text": "This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) to compare gene expression patterns. Our approach involves cleaning and filtering the data, running PCA for quality control, and using the Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression across tissues."
   },
   {
     "objectID": "index.html#project-roadmap-living",
     "href": "index.html#project-roadmap-living",
-    "title": "Project Title",
-    "section": "2 Project roadmap (living)",
-    "text": "2 Project roadmap (living)\n\nFind dataset(s)\nDefine outcome + predictors / variables\nExploratory analysis + QC\nMethod 1 (required)\nMethod 2 (optional/extension)\nFinal figures + interpretation\nLimitations + ethics + reproducibility notes"
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "1 Project roadmap (living)",
+    "text": "1 Project roadmap (living)\n\nFind dataset(s)\nDefine outcome + predictors / variables\nExploratory analysis + QC\nMethod 1 (required)\nMethod 2 (optional/extension)\nFinal figures + interpretation\nLimitations + ethics + reproducibility notes"
   },
   {
     "objectID": "index.html#where-to-find-things",
     "href": "index.html#where-to-find-things",
-    "title": "Project Title",
-    "section": "3 Where to find things",
-    "text": "3 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "2 Where to find things",
+    "text": "2 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
   }
 ]

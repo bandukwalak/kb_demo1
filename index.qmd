@@ -1,24 +1,15 @@
 ---
-title: "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways"
-subtitle: "BNFO 420 Capstone"
+title:"GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways"
+subtitle:"BNFO 420 Capstone"
 ---
 
-This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, 
-especially in the cAMP/PKA pathway. We are using a 
-bulk RNA-seq dataset from mice that includes different 
-genotypes, treatments (vehicle vs drug), and tissues 
-(liver and iWAT) to compare gene expression patterns . 
-Our approach involves cleaning and filtering the data, 
-running PCA for quality control, and using the Limma 
-package to perform differential expression analysis 
-across groups . We are specifically testing whether 
-treated samples and GLP1R-expressing samples show 
-higher expression of downstream pathway genes. 
-The main deliverables will include PCA plots, 
-volcano plots, heatmaps, and a table of differentially 
-expressed genes. These results will help us understand 
-how GLP-1 signaling affects gene expression across 
-tissues.
+This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. 
+We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) 
+to compare gene expression patterns. Our approach involves cleaning and filtering the data, running PCA for quality control, and using the 
+Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and 
+GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, 
+heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression 
+across tissues.
 
 ## Project roadmap (living)
 - [ ] Find dataset(s)
