@@ -1,7 +1,7 @@
 ---
 title: "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways"
 subtitle: "BNFO 420 Capstone"
-
+---
  ## Abstract
 This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. 
 We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) 
