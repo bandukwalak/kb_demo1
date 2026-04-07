@@ -11,6 +11,8 @@ GLP1R-expressing samples show higher expression of downstream pathway genes. The
 heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression 
 across tissues.
 
+## Introduction 
+
 ## Project roadmap (living)
 - [ ] Find dataset(s)
 - [ ] Define outcome + predictors / variables
