@@ -43,13 +43,59 @@ research in cardiometabolic disease and therapeutic development.
 
 
 ## Project roadmap (living)
-- [ ] Find dataset(s)
-- [ ] Define outcome + predictors / variables
-- [ ] Exploratory analysis + QC
-- [ ] Method 1 (required)
-- [ ] Method 2 (optional/extension)
-- [ ] Final figures + interpretation
-- [ ] Limitations + ethics + reproducibility notes
+- [ ] Identify and Acquire Dataset(s)
+Obtain publicly available bulk RNA-seq datasets from GEO containing GLP1R-related experimental conditions, 
+including treatment (mGIPR-Ab/P1 vs vehicle), genotype variations, and relevant tissues (liver and iWAT). 
+Ensure datasets include complete expression matrices and metadata for downstream analysis.
+
+- [ ] Define Outcome Variables and Predictors
+Establish the dependent variable as the expression levels of downstream GLP-1 signaling pathway genes 
+(primarily cAMP/PKA-associated genes). Define independent variables as treatment condition (vehicle vs GLP-1 agonist), 
+genotype (GLP1R intact vs knockout, GIPR controls), and tissue type (liver vs adipose).
+
+- [ ] Data Organization and Preprocessing
+Structure raw data into analyzable formats by aligning expression matrices with corresponding metadata. 
+Separate datasets by tissue type, convert expression values to log2(FPKM + 1), and remove low-expression genes to reduce noise and 
+improve statistical reliability.
+
+- [ ] Exploratory Data Analysis and Quality Control (QC)
+Perform Principal Component Analysis (PCA) to evaluate sample clustering, detect outliers, 
+and confirm biological grouping based on treatment, genotype, and tissue. 
+This step ensures data integrity prior to statistical modeling.
+
+- [ ] Define Statistical Comparisons
+Establish biologically meaningful comparisons, including:
+Treatment effect in control (fl/fl) mice
+GLP1R knockout vs control
+GIPR knockout vs control
+Genotype × treatment interaction
+
+- [ ] Differential Expression Analysis (Primary Method)
+Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across 
+defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized 
+RNA-seq data.
+
+- [ ] Differential Expression Analysis (Primary Method)
+Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across 
+defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized 
+RNA-seq data.
+
+- [ ] Generate Final Outputs and Visualizations
+PCA plots (quality control and clustering)
+Volcano plots (significant gene expression changes)
+Heatmaps (top differentially expressed genes)
+Summary tables (log2 fold change, adjusted p-values)
+
+- [ ] Interpretation of Results
+Analyze results in the context of GLP1R signaling biology, focusing on whether increased GLP1R expression correlates with 
+elevated downstream cAMP/PKA pathway activity and whether treatment enhances this effect.
+
+- [ ] Limitations, Validation, and Reproducibility
+Acknowledge limitations such as lack of single-cell resolution and protein-level validation. 
+Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline.
+
+
+
 
 ## Where to find things
 - **Scripts:** `scripts/`
