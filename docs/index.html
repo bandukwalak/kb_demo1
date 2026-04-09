@@ -162,17 +162,45 @@ ul.task-list li input[type="checkbox"] {
 <section id="project-roadmap-living" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">2</span> Project roadmap (living)</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Identify and Acquire Dataset(s) Obtain publicly available bulk RNA-seq datasets from GEO containing GLP1R-related experimental conditions, including treatment (mGIPR-Ab/P1 vs vehicle), genotype variations, and relevant tissues (liver and iWAT). Ensure datasets include complete expression matrices and metadata for downstream analysis.</label></p></li>
-<li><p><label><input type="checkbox">Define Outcome Variables and Predictors Establish the dependent variable as the expression levels of downstream GLP-1 signaling pathway genes (primarily cAMP/PKA-associated genes). Define independent variables as treatment condition (vehicle vs GLP-1 agonist), genotype (GLP1R intact vs knockout, GIPR controls), and tissue type (liver vs adipose).</label></p></li>
-<li><p><label><input type="checkbox">Data Organization and Preprocessing Structure raw data into analyzable formats by aligning expression matrices with corresponding metadata. Separate datasets by tissue type, convert expression values to log2(FPKM + 1), and remove low-expression genes to reduce noise and improve statistical reliability.</label></p></li>
-<li><p><label><input type="checkbox">Exploratory Data Analysis and Quality Control (QC) Perform Principal Component Analysis (PCA) to evaluate sample clustering, detect outliers, and confirm biological grouping based on treatment, genotype, and tissue. This step ensures data integrity prior to statistical modeling.</label></p></li>
-<li><p><label><input type="checkbox">Define Statistical Comparisons Establish biologically meaningful comparisons, including: Treatment effect in control (fl/fl) mice GLP1R knockout vs control GIPR knockout vs control Genotype × treatment interaction</label></p></li>
-<li><p><label><input type="checkbox">Differential Expression Analysis (Primary Method) Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</label></p></li>
-<li><p><label><input type="checkbox">Differential Expression Analysis (Primary Method) Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</label></p></li>
-<li><p><label><input type="checkbox">Generate Final Outputs and Visualizations PCA plots (quality control and clustering) Volcano plots (significant gene expression changes) Heatmaps (top differentially expressed genes) Summary tables (log2 fold change, adjusted p-values)</label></p></li>
-<li><p><label><input type="checkbox">Interpretation of Results Analyze results in the context of GLP1R signaling biology, focusing on whether increased GLP1R expression correlates with elevated downstream cAMP/PKA pathway activity and whether treatment enhances this effect.</label></p></li>
-<li><p><label><input type="checkbox">Limitations, Validation, and Reproducibility Acknowledge limitations such as lack of single-cell resolution and protein-level validation. Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline.</label></p></li>
+<li><label><input type="checkbox">Identify and Acquire Dataset(s)</label></li>
 </ul>
+<p>Obtain publicly available bulk RNA-seq datasets from GEO containing GLP1R-related experimental conditions, including treatment (mGIPR-Ab/P1 vs vehicle), genotype variations, and relevant tissues (liver and iWAT). Ensure datasets include complete expression matrices and metadata for downstream analysis.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Define Outcome Variables and Predictors</label></li>
+</ul>
+<p>Establish the dependent variable as the expression levels of downstream GLP-1 signaling pathway genes (primarily cAMP/PKA-associated genes). Define independent variables as treatment condition (vehicle vs GLP-1 agonist), genotype (GLP1R intact vs knockout, GIPR controls), and tissue type (liver vs adipose).</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Data Organization and Preprocessing</label></li>
+</ul>
+<p>Structure raw data into analyzable formats by aligning expression matrices with corresponding metadata. Separate datasets by tissue type, convert expression values to log2(FPKM + 1), and remove low-expression genes to reduce noise and improve statistical reliability.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Exploratory Data Analysis and Quality Control (QC)</label></li>
+</ul>
+<p>Perform Principal Component Analysis (PCA) to evaluate sample clustering, detect outliers, and confirm biological grouping based on treatment, genotype, and tissue. This step ensures data integrity prior to statistical modeling.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Define Statistical Comparisons</label></li>
+</ul>
+<p>Establish biologically meaningful comparisons, including: Treatment effect in control (fl/fl) mice GLP1R knockout vs control GIPR knockout vs control Genotype × treatment interaction</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Differential Expression Analysis (Primary Method)</label></li>
+</ul>
+<p>Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Differential Expression Analysis (Primary Method)</label></li>
+</ul>
+<p>Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Generate Final Outputs and Visualizations</label></li>
+</ul>
+<p>PCA plots (quality control and clustering) Volcano plots (significant gene expression changes) Heatmaps (top differentially expressed genes) Summary tables (log2 fold change, adjusted p-values)</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Interpretation of Results</label></li>
+</ul>
+<p>Analyze results in the context of GLP1R signaling biology, focusing on whether increased GLP1R expression correlates with elevated downstream cAMP/PKA pathway activity and whether treatment enhances this effect.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Limitations, Validation, and Reproducibility</label></li>
+</ul>
+<p>Acknowledge limitations such as lack of single-cell resolution and protein-level validation. Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline.</p>
 </section>
 <section id="where-to-find-things" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="where-to-find-things"><span class="header-section-number">3</span> Where to find things</h2>
