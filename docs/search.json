@@ -18,21 +18,21 @@
     "href": "proposal.html#datasets",
     "title": "Proposal",
     "section": "2 Dataset(s)",
-    "text": "2 Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables: Tissue type, genotype, treatment type, and gene expression measurements.\n\nLicense/usage notes: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
+    "text": "2 Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables:\n\nTissue type\nGenotype\nTreatment type\nGene expression measurements\n\nLicense/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
   },
   {
     "objectID": "proposal.html#planned-analysis",
     "href": "proposal.html#planned-analysis",
     "title": "Proposal",
     "section": "3 Planned analysis",
-    "text": "3 Planned analysis\nDescribe your plan in bullets: - Cleaning/QC - Visualizations - Statistical/ML approach - How you’ll validate (train/test, CV, sensitivity checks, etc.)"
+    "text": "3 Planned analysis\nDescribe your plan in bullets:\n\nData cleaning and preprocessing\n\nCombine expression files into one dataset\nMatch metadata to expression matrix (GSM IDs)\nLog2 transformation and filtering of low-expression genes\nRemove zero-variance genes before analysis\n\nCleaning/QC\n\nPerform PCA to identify clustering and outliers\nEvaluate variance explained by principal components\nCheck separation by treatment and genotype\n\nVisualizations\n\nPCA plots for QC\nVolcano plots for differential expression\nHeatmaps of top differentially expressed genes\n\nStatistical/ML approach\n\nBuild design matrix based on genotype, treatment, and tissues\nFit linear model using limma\nIdentify differentially expressed genes\n\nValidation & Intrepretation\n\nCompare treated vs untreated groups\n\nPeptide Treatment: mGIPR-Ab/P1\n\nVehicle Treatment\n\nFocus on balanced comaprisons\nInterpret results in context of GLP-1R and cAMP/PKA pathway."
   },
   {
     "objectID": "proposal.html#deliverables",
     "href": "proposal.html#deliverables",
     "title": "Proposal",
     "section": "4 Deliverables",
-    "text": "4 Deliverables\n\nWebsite sections\nKey figures/tables\nAny optional stretch goals"
+    "text": "4 Deliverables\n\nWebsite sections\nKey figures/tables\n\nPCA Plot for QC\nVolcano Plot\nHeatmaps\nDifferential Expression Results Table\n\nAny optional stretch goals"
   },
   {
     "objectID": "results.html",
@@ -100,5 +100,54 @@
     "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
     "section": "2 Where to find things",
     "text": "2 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "BNFO 420 Capstone",
+    "section": "",
+    "text": "title: “Introduction”"
+  },
+  {
+    "objectID": "introduction.html#overview",
+    "href": "introduction.html#overview",
+    "title": "BNFO 420 Capstone",
+    "section": "1 Overview",
+    "text": "1 Overview"
+  },
+  {
+    "objectID": "introduction.html#background-knowledge-in-glp-1",
+    "href": "introduction.html#background-knowledge-in-glp-1",
+    "title": "Introduction",
+    "section": "2 ## Background Knowledge in GLP-1",
+    "text": "2 ## Background Knowledge in GLP-1"
+  },
+  {
+    "objectID": "introduction.html#gap-in-knowledge",
+    "href": "introduction.html#gap-in-knowledge",
+    "title": "Introduction",
+    "section": "3 ## Gap In Knowledge",
+    "text": "3 ## Gap In Knowledge"
+  },
+  {
+    "objectID": "introduction.html#what-is-glp-1",
+    "href": "introduction.html#what-is-glp-1",
+    "title": "Introduction",
+    "section": "4 ## What is GLP-1",
+    "text": "4 ## What is GLP-1"
+  },
+  {
+    "objectID": "introduction.html#objective",
+    "href": "introduction.html#objective",
+    "title": "Introduction",
+    "section": "5 ## Objective",
+    "text": "5 ## Objective"
+  },
+  {
+    "objectID": "introduction.html#relative-literature",
+    "href": "introduction.html#relative-literature",
+    "title": "Introduction",
+    "section": "6 ## Relative Literature",
+    "text": "6 ## Relative Literature"
   }
 ]

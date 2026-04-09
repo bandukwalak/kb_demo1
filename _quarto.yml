@@ -12,6 +12,8 @@ website:
         text: Home
       - href: proposal.qmd
         text: Proposal
+      - href: introduction.qmd
+        text: Introduction
       - href: results.qmd
         text: Results
       - href: team.qmd
