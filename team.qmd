@@ -1,17 +1,53 @@
 ---
 title: "Team"
-format: html
 ---
 
-## Members
-- Zoya Akhtar
-- Saja Al Jariri
-- Mariya Dehnuwala
-- Courtney Sartor
-- Khadeeja Bandukwala: Code
+## Team Members
 
-## Collaboration rules (simple)
-- Pull before you start work.
-- Commit small changes with clear messages.
-- Only one person edits the *same* `.qmd` file at a time.
-- Use Issues (optional) for tasks/bugs.
+This project was completed by a team of five students in BNFO 420 Capstone:
+
+- **Zoya Akhtar**
+- **Saja Al Jariri**
+- **Mariya Dehnuwala**
+- **Courtney Sartor**
+- **Khadeeja Bandukwala**
+
+---
+
+## Individual Contributions
+
+Each team member contributed to different aspects of the analysis pipeline, presentation, and website development:
+
+### Data Acquisition & Pipeline Development
+
+| Team Member | Contribution |
+|------------|--------------|
+| **Mariya Dehnuwala** | Dataset selection and GEO download; Script 03 (PCA plots); Heatmap generation |
+| **Khadeeja Bandukwala** | Script 01 (metadata organization); Script 04 (Limma differential expression) |
+| **Zoya Akhtar** | Script 02 (normalization and filtering); Website development |
+| **Courtney Sartor** | Script 05 (Volcano plots); Synthesis and interpretation slides |
+
+### Presentation & Communication
+
+| Team Member | Contribution |
+|------------|--------------|
+| **Saja Al Jariri** | Slide deck design and layout; GLP-1R background, hypothesis, and analysis pipeline slides |
+| **Courtney Sartor** | Synthesis and interpretation slides |
+| **Zoya Akhtar** | Website development and documentation |
+
+---
+
+## Analysis Pipeline Overview
+
+Our team built a complete RNA-seq analysis pipeline from scratch:
+
+1. **Data Acquisition** (Mariya) — Downloaded and organized 60 samples from GEO accession GSE293291
+2. **Metadata Organization** (Khadeeja) — Created sample annotation table linking files to experimental conditions
+3. **Normalization & Filtering** (Zoya) — Quality control and gene filtering (54,343 → 14,152 genes)
+4. **Exploratory Analysis** (Mariya) — PCA plots to validate data quality and sample clustering
+5. **Differential Expression** (Khadeeja) — Limma analysis across four experimental comparisons
+6. **Visualization** (Courtney & Mariya) — Volcano plots and heatmaps of key findings
+7. **Interpretation & Communication** (Courtney & Saja) — Scientific synthesis and presentation design
+8. **Website Development** (Zoya) — Project documentation and results dissemination
+
+---
