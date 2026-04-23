@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
+  },
+  {
+    "objectID": "proposal.html#research-question",
+    "href": "proposal.html#research-question",
+    "title": "Proposal",
+    "section": "",
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
+  },
+  {
+    "objectID": "proposal.html#datasets",
+    "href": "proposal.html#datasets",
+    "title": "Proposal",
+    "section": "2 Dataset(s)",
+    "text": "2 Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables:\n\nTissue type\nGenotype\nTreatment type\nGene expression measurements\n\nLicense/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
+  },
+  {
+    "objectID": "proposal.html#planned-analysis",
+    "href": "proposal.html#planned-analysis",
+    "title": "Proposal",
+    "section": "3 Planned analysis",
+    "text": "3 Planned analysis\nDescribe your plan in bullets:\n\nData cleaning and preprocessing\n\nCombine expression files into one dataset\nMatch metadata to expression matrix (GSM IDs)\nLog2 transformation and filtering of low-expression genes\nRemove zero-variance genes before analysis\n\nCleaning/QC\n\nPerform PCA to identify clustering and outliers\nEvaluate variance explained by principal components\nCheck separation by treatment and genotype\n\nVisualizations\n\nPCA plots for QC\nVolcano plots for differential expression\nHeatmaps of top differentially expressed genes\n\nStatistical/ML approach\n\nBuild design matrix based on genotype, treatment, and tissues\nFit linear model using limma\nIdentify differentially expressed genes\n\nValidation & Intrepretation\n\nCompare treated vs untreated groups\n\nPeptide Treatment: mGIPR-Ab/P1\n\nVehicle Treatment\n\nFocus on balanced comaprisons\nInterpret results in context of GLP-1R and cAMP/PKA pathway."
+  },
+  {
+    "objectID": "proposal.html#deliverables",
+    "href": "proposal.html#deliverables",
+    "title": "Proposal",
+    "section": "4 Deliverables",
+    "text": "4 Deliverables\n\nWebsite sections\nKey figures/tables\n\nPCA Plot for QC\nVolcano Plot\nHeatmaps\nDifferential Expression Results Table\n\nAny optional stretch goals"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "",
+    "text": "This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) to compare gene expression patterns. Our approach involves cleaning and filtering the data, running PCA for quality control, and using the Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression across tissues."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "1 Introduction",
+    "text": "1 Introduction\nGlucagon-like peptide-1 (GLP-1) is an incretin hormone that plays a critical role in maintaining glucose homeostasis and regulating overall cardiometabolic health. It is secreted by intestinal L-cells in response to food intake and functions to enhance insulin secretion from pancreatic β-cells in a glucose-dependent manner while simultaneously suppressing glucagon release from α-cells. In addition to its effects on blood glucose regulation, GLP-1 slows gastric emptying, reduces appetite through central nervous system signaling, and contributes to weight loss. These combined physiological effects have made GLP-1 a major therapeutic target for the treatment of type 2 diabetes and obesity. GLP-1 exerts its effects by binding to the GLP-1 receptor (GLP1R), a G protein-coupled receptor expressed in multiple tissues including the pancreas, brain, liver, and adipose tissue. Upon activation, GLP1R stimulates intracellular signaling pathways, most notably the cyclic AMP (cAMP)/protein kinase A (PKA) pathway. This signaling cascade leads to downstream transcriptional changes that influence cellular metabolism, insulin secretion, and energy balance. Because GLP1R activation results in broad systemic effects, understanding how this receptor regulates gene expression at the molecular level is essential for explaining both its therapeutic benefits and potential side effects.\nThe increasing use of GLP-1 receptor agonists, such as peptide-based treatments designed to mimic or enhance GLP-1 activity, has raised important questions about how these drugs alter gene expression across different tissues. While the physiological outcomes of GLP-1 signaling are well documented, there are still gaps in understanding how GLP1R expression correlates with activation of downstream signaling pathways at the transcriptomic level. In particular, it remains unclear whether higher GLP1R expression is consistently associated with increased expression of genes involved in the cAMP/PKA signaling pathway, and whether these effects differ between tissues such as liver and white adipose tissue.\nIn this project, we use bulk RNA sequencing (RNA-seq) data from a publicly available mouse dataset to investigate the relationship between GLP1R expression and downstream gene activity. The dataset includes multiple genotypes (GLP1R intact and knockout, as well as GIPR controls), two tissue types (liver and inguinal white adipose tissue), and two treatment conditions (vehicle control and mGIPR-Ab/P1, a GLP-1 receptor–targeting peptide). By comparing gene expression across these conditions, we aim to identify how GLP1R signaling influences downstream pathways and whether these effects depend on receptor presence or pharmacological activation.\nSpecifically, we are testing whether tissues with higher GLP1R expression exhibit increased expression of downstream GLP-1 signaling pathway genes, particularly those involved in the cAMP/PKA pathway. We also examine how treatment with a GLP-1 receptor agonist alters gene expression compared to untreated controls and assess whether knockout of GLP1R disrupts these signaling patterns. Our hypothesis is that GLP1R expression will positively correlate with downstream pathway activity and that treated samples will show stronger activation of these genes compared to controls. By integrating transcriptomic data with experimental variables such as genotype, treatment, and tissue type, this study aims to provide a deeper understanding of GLP-1 signaling at the gene expression level. These findings may help explain how GLP-1–based therapies produce their metabolic effects and contribute to ongoing research in cardiometabolic disease and therapeutic development."
+  },
+  {
+    "objectID": "index.html#project-roadmap-living",
+    "href": "index.html#project-roadmap-living",
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "2 Project roadmap (living)",
+    "text": "2 Project roadmap (living)\n\nIdentify and Acquire Dataset(s)\n\nObtain publicly available bulk RNA-seq datasets from GEO containing GLP1R-related experimental conditions, including treatment (mGIPR-Ab/P1 vs vehicle), genotype variations, and relevant tissues (liver and iWAT). Ensure datasets include complete expression matrices and metadata for downstream analysis.\n\nDefine Outcome Variables and Predictors\n\nEstablish the dependent variable as the expression levels of downstream GLP-1 signaling pathway genes (primarily cAMP/PKA-associated genes). Define independent variables as treatment condition (vehicle vs GLP-1 agonist), genotype (GLP1R intact vs knockout, GIPR controls), and tissue type (liver vs adipose).\n\nData Organization and Preprocessing\n\nStructure raw data into analyzable formats by aligning expression matrices with corresponding metadata. Separate datasets by tissue type, convert expression values to log2(FPKM + 1), and remove low-expression genes to reduce noise and improve statistical reliability.\n\nExploratory Data Analysis and Quality Control (QC)\n\nPerform Principal Component Analysis (PCA) to evaluate sample clustering, detect outliers, and confirm biological grouping based on treatment, genotype, and tissue. This step ensures data integrity prior to statistical modeling.\n\nDefine Statistical Comparisons\n\nEstablish biologically meaningful comparisons, including: Treatment effect in control (fl/fl) mice GLP1R knockout vs control GIPR knockout vs control Genotype × treatment interaction\n\nDifferential Expression Analysis (Primary Method)\n\nApply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.\n\nDifferential Expression Analysis (Primary Method)\n\nApply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.\n\nGenerate Final Outputs and Visualizations\n\nPCA plots (quality control and clustering) Volcano plots (significant gene expression changes) Heatmaps (top differentially expressed genes) Summary tables (log2 fold change, adjusted p-values)\n\nInterpretation of Results\n\nAnalyze results in the context of GLP1R signaling biology, focusing on whether increased GLP1R expression correlates with elevated downstream cAMP/PKA pathway activity and whether treatment enhances this effect.\n\nLimitations, Validation, and Reproducibility\n\nAcknowledge limitations such as lack of single-cell resolution and protein-level validation. Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline."
+  },
+  {
+    "objectID": "index.html#where-to-find-things",
+    "href": "index.html#where-to-find-things",
+    "title": "GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways",
+    "section": "3 Where to find things",
+    "text": "3 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala: Code"
+  },
+  {
+    "objectID": "team.html#members",
+    "href": "team.html#members",
+    "title": "Team",
+    "section": "",
+    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala: Code"
+  },
+  {
+    "objectID": "team.html#collaboration-rules-simple",
+    "href": "team.html#collaboration-rules-simple",
+    "title": "Team",
+    "section": "2 Collaboration rules (simple)",
+    "text": "2 Collaboration rules (simple)\n\nPull before you start work.\nCommit small changes with clear messages.\nOnly one person edits the same .qmd file at a time.\nUse Issues (optional) for tasks/bugs."
+  },
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Results",
+    "section": "",
+    "text": "We evaluated gene expression changes across liver and adipose tissue to understand GLP-1R and GIPR signaling effects. Our analysis revealed tissue-specific responses, unexpected GIPR dominance, and modest cAMP/PKA pathway activation."
+  },
+  {
+    "objectID": "results.html#overview",
+    "href": "results.html#overview",
+    "title": "Results",
+    "section": "",
+    "text": "We evaluated gene expression changes across liver and adipose tissue to understand GLP-1R and GIPR signaling effects. Our analysis revealed tissue-specific responses, unexpected GIPR dominance, and modest cAMP/PKA pathway activation."
+  },
+  {
+    "objectID": "results.html#gene-expression-filtering",
+    "href": "results.html#gene-expression-filtering",
+    "title": "Results",
+    "section": "2 Gene Expression Filtering",
+    "text": "2 Gene Expression Filtering\nBefore conducting differential expression analysis, we filtered out low-expression genes to improve statistical reliability and reduce noise.\n\n\n\n\nFigure 1. Gene expression filtering summary. Approximately 74% of genes were removed during quality control, retaining 14,152 genes in liver tissue and 14,715 genes in adipose tissue. Only genes with expression &gt; 1 in at least 5 samples were retained for downstream analysis.\n\n\n\nThe filtering step removed ~40,000 low-expression genes, keeping only those with robust, detectable expression. This improves the reliability of differential expression testing and reduces false discovery rates."
+  },
+  {
+    "objectID": "results.html#principal-component-analysis",
+    "href": "results.html#principal-component-analysis",
+    "title": "Results",
+    "section": "3 Principal Component Analysis",
+    "text": "3 Principal Component Analysis\nWe performed PCA to validate data quality and assess whether treatment drove global gene expression patterns.\n\n3.1 Liver Tissue\n\n\n\n\nFigure 2. PCA plot of liver GLP1R cohort. Each point represents one biological sample. Treated samples (red) separate clearly from vehicle controls (blue) along PC1 (26.4% variance) and PC2 (15.3% variance). The clean separation validates dataset quality before differential expression analysis.\n\n\n\nTreatment samples cluster tightly in the positive PC1 space, while vehicle controls occupy the negative space. No obvious outliers are present, confirming consistent biological replicates.\n\n\n3.2 Adipose Tissue (iWAT)\n\n\n\n\nFigure 3. PCA plot of iWAT GLP1R cohort. Separation appears more pronounced than in liver tissue, with PC1 capturing 39.6% of variance and PC2 capturing 19.7%. This suggests a stronger treatment effect in fat tissue compared to liver.\n\n\n\nThe increased variance explained by PC1 in adipose tissue (39.6% vs 26.4% in liver) indicates that treatment has a more dominant effect on global gene expression in this tissue."
+  },
+  {
+    "objectID": "results.html#differential-expression-analysis",
+    "href": "results.html#differential-expression-analysis",
+    "title": "Results",
+    "section": "4 Differential Expression Analysis",
+    "text": "4 Differential Expression Analysis\nWe performed four differential expression comparisons using the Limma package to identify genes significantly altered by treatment or receptor knockout.\n\n4.1 Liver: Drug Treatment Effect\n\n\n\n\nFigure 4. Volcano plot comparing drug vs vehicle in liver tissue. Each point represents a gene. Red points indicate significantly upregulated genes (8 total), blue points show downregulated genes (49 total). Purple diamonds mark hypothesis genes (GLP1R, PRKACA, PRKACB, etc.) from the cAMP/PKA pathway. Significance threshold: FDR &lt; 0.05, |log2FC| &gt; 1.\n\n\n\nKey findings:\n\n57 differentially expressed genes (8 up, 49 down)\nModest overall response — most genes cluster near zero fold change\ncAMP/PKA pathway genes not significant — hypothesis genes (purple diamonds) fall below the significance threshold\nInterpretation: Liver shows weak transcriptional activation in response to GLP-1 agonist treatment\n\n\n\n\n4.2 Liver: GLP-1R Knockout vs Control\n\n\n\n\nFigure 5. Volcano plot comparing GLP-1R knockout vs control in liver. CNS-specific deletion of the GLP-1 receptor caused widespread gene expression changes. 87 genes were upregulated and 173 downregulated (260 total). cAMP/PKA genes show borderline significance.\n\n\n\nKey findings:\n\n260 differentially expressed genes (87 up, 173 down)\nStronger effect than drug treatment — removing the receptor causes more changes than activating it\ncAMP/PKA genes at borderline significance — suggesting pathway involvement when receptor is absent\nInterpretation: GLP-1R deletion has system-level effects beyond direct receptor activation\n\n\n\n\n4.3 Liver: GIPR Knockout vs Control\n\n\n\n\nFigure 6. Volcano plot comparing GIPR knockout vs control in liver. CNS-specific deletion of the GIP receptor produced the most dramatic transcriptional changes of any comparison, with 299 upregulated and 161 downregulated genes (460 total).\n\n\n\nKey findings:\n\n460 differentially expressed genes (299 up, 161 down) — largest effect observed\nStrong global transcriptional impact — nearly double the GLP-1R knockout effect\nHypothesis genes remain non-significant — GIPR affects genes outside our predicted pathway\nInterpretation: GIPR plays an unexpectedly major regulatory role in liver gene expression through CNS-mediated pathways\n\n\n\n\n4.4 Adipose Tissue: Drug Treatment Effect\n\n\n\n\nFigure 7. Volcano plot comparing drug vs vehicle in adipose tissue (iWAT). Fat tissue showed a stronger response than liver to the same GLP-1 agonist treatment, with 241 differentially expressed genes (49 up, 192 down).\n\n\n\nKey findings:\n\n241 differentially expressed genes (49 up, 192 down)\nStronger response than liver — 4-fold more genes affected compared to liver treatment\ncAMP/PKA genes near significance — closer to threshold than in liver\nInterpretation: GLP-1 signaling is tissue-specific, with adipose tissue showing enhanced sensitivity"
+  },
+  {
+    "objectID": "results.html#gene-expression-patterns",
+    "href": "results.html#gene-expression-patterns",
+    "title": "Results",
+    "section": "5 Gene Expression Patterns",
+    "text": "5 Gene Expression Patterns\nHeatmaps reveal coordinated expression changes across the top differentially expressed genes.\n\n5.1 Top 10 Differentially Expressed Genes\n\n\n\n\nFigure 8. Heatmap of top 10 differentially expressed genes. Treatment samples (right columns) show consistently higher expression (red) compared to vehicle controls (left columns, blue). Genes include Hnmpl, Serbp1, Rpl8, and others. Clear clustering by condition demonstrates robust, reproducible treatment effects.\n\n\n\nThe dendrogram shows perfect separation between treatment and vehicle groups, confirming that the top differentially expressed genes are consistent across biological replicates.\n\n\n5.2 Top 3 Differentially Expressed Genes\n\n\n\n\nFigure 9. Heatmap of top 3 most significant genes (Hnmpl, Serbp1, Rpl8). Zoomed view reinforces the pattern: treatment consistently increases expression of these genes across all samples. The effect is coordinated and reproducible."
+  },
+  {
+    "objectID": "results.html#summary-of-findings",
+    "href": "results.html#summary-of-findings",
+    "title": "Results",
+    "section": "6 Summary of Findings",
+    "text": "6 Summary of Findings\nOur comprehensive analysis across multiple comparisons revealed:\n\n\n\n\n\n\nNoteKey Takeaways\n\n\n\n\nData Quality Validated — PCA plots confirmed clean clustering by treatment with no outliers\nModest Liver Treatment Effect — Only 57 genes changed with drug treatment in liver\nTissue-Specific Responses — Adipose tissue (241 genes) responded 4× more strongly than liver (57 genes)\nReceptor Knockout &gt; Drug Treatment — Deleting receptors caused more dramatic changes than activating them\nGIPR Dominance — GIPR knockout produced the largest transcriptional response (460 genes)\ncAMP/PKA Pathway Subtle — Hypothesis genes showed trends but did not reach statistical significance\n\n\n\nThese results suggest that GLP-1R signaling operates through tissue-specific mechanisms, with GIPR playing an unexpectedly central role in CNS-mediated regulation of peripheral metabolism. The modest cAMP/PKA pathway activation indicates that GLP-1 drugs may work through alternative or redundant signaling cascades."
+  },
+  {
+    "objectID": "introduction.html#background-knowledge-in-glp-1",
+    "href": "introduction.html#background-knowledge-in-glp-1",
+    "title": "Introduction",
+    "section": "2 ## Background Knowledge in GLP-1",
+    "text": "2 ## Background Knowledge in GLP-1"
+  },
+  {
+    "objectID": "introduction.html#gap-in-knowledge",
+    "href": "introduction.html#gap-in-knowledge",
+    "title": "Introduction",
+    "section": "3 ## Gap In Knowledge",
+    "text": "3 ## Gap In Knowledge"
+  },
+  {
+    "objectID": "introduction.html#what-is-glp-1",
+    "href": "introduction.html#what-is-glp-1",
+    "title": "Introduction",
+    "section": "4 ## What is GLP-1",
+    "text": "4 ## What is GLP-1"
+  },
+  {
+    "objectID": "introduction.html#objective",
+    "href": "introduction.html#objective",
+    "title": "Introduction",
+    "section": "5 ## Objective",
+    "text": "5 ## Objective"
+  },
+  {
+    "objectID": "introduction.html#relative-literature",
+    "href": "introduction.html#relative-literature",
+    "title": "Introduction",
+    "section": "6 ## Relative Literature",
+    "text": "6 ## Relative Literature"
+  }
+]

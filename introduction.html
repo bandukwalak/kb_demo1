@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways – BNFO 420 Capstone</title>
+<title>Introduction – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./introduction.html"> 
+    <a class="nav-link active" href="./introduction.html" aria-current="page"> 
 <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
@@ -126,9 +126,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living"><span class="header-section-number">2</span> Project roadmap (living)</a></li>
-  <li><a href="#where-to-find-things" id="toc-where-to-find-things" class="nav-link" data-scroll-target="#where-to-find-things"><span class="header-section-number">3</span> Where to find things</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> ## Overview</a></li>
+  <li><a href="#background-knowledge-in-glp-1" id="toc-background-knowledge-in-glp-1" class="nav-link" data-scroll-target="#background-knowledge-in-glp-1"><span class="header-section-number">2</span> ## Background Knowledge in GLP-1</a></li>
+  <li><a href="#gap-in-knowledge" id="toc-gap-in-knowledge" class="nav-link" data-scroll-target="#gap-in-knowledge"><span class="header-section-number">3</span> ## Gap In Knowledge</a></li>
+  <li><a href="#what-is-glp-1" id="toc-what-is-glp-1" class="nav-link" data-scroll-target="#what-is-glp-1"><span class="header-section-number">4</span> ## What is GLP-1</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective"><span class="header-section-number">5</span> ## Objective</a></li>
+  <li><a href="#relative-literature" id="toc-relative-literature" class="nav-link" data-scroll-target="#relative-literature"><span class="header-section-number">6</span> ## Relative Literature</a></li>
   </ul>
 </nav>
     </div>
@@ -137,8 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">GLP-1R Expression Predicts Activation of cAMP/PKA Signaling Pathways</h1>
-<p class="subtitle lead">BNFO 420 Capstone</p>
+<h1 class="title">Introduction</h1>
 </div>
 
 
@@ -155,65 +157,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project looks at how GLP-1 receptor (GLP1R) expression relates to downstream signaling genes, especially in the cAMP/PKA pathway. We are using a bulk RNA-seq dataset from mice that includes different genotypes, treatments (vehicle vs drug), and tissues (liver and iWAT) to compare gene expression patterns. Our approach involves cleaning and filtering the data, running PCA for quality control, and using the Limma package to perform differential expression analysis across groups . We are specifically testing whether treated samples and GLP1R-expressing samples show higher expression of downstream pathway genes. The main deliverables will include PCA plots, volcano plots, heatmaps, and a table of differentially expressed genes. These results will help us understand how GLP-1 signaling affects gene expression across tissues.</p>
-<section id="introduction" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>Glucagon-like peptide-1 (GLP-1) is an incretin hormone that plays a critical role in maintaining glucose homeostasis and regulating overall cardiometabolic health. It is secreted by intestinal L-cells in response to food intake and functions to enhance insulin secretion from pancreatic β-cells in a glucose-dependent manner while simultaneously suppressing glucagon release from α-cells. In addition to its effects on blood glucose regulation, GLP-1 slows gastric emptying, reduces appetite through central nervous system signaling, and contributes to weight loss. These combined physiological effects have made GLP-1 a major therapeutic target for the treatment of type 2 diabetes and obesity. GLP-1 exerts its effects by binding to the GLP-1 receptor (GLP1R), a G protein-coupled receptor expressed in multiple tissues including the pancreas, brain, liver, and adipose tissue. Upon activation, GLP1R stimulates intracellular signaling pathways, most notably the cyclic AMP (cAMP)/protein kinase A (PKA) pathway. This signaling cascade leads to downstream transcriptional changes that influence cellular metabolism, insulin secretion, and energy balance. Because GLP1R activation results in broad systemic effects, understanding how this receptor regulates gene expression at the molecular level is essential for explaining both its therapeutic benefits and potential side effects.</p>
-<p>The increasing use of GLP-1 receptor agonists, such as peptide-based treatments designed to mimic or enhance GLP-1 activity, has raised important questions about how these drugs alter gene expression across different tissues. While the physiological outcomes of GLP-1 signaling are well documented, there are still gaps in understanding how GLP1R expression correlates with activation of downstream signaling pathways at the transcriptomic level. In particular, it remains unclear whether higher GLP1R expression is consistently associated with increased expression of genes involved in the cAMP/PKA signaling pathway, and whether these effects differ between tissues such as liver and white adipose tissue.</p>
-<p>In this project, we use bulk RNA sequencing (RNA-seq) data from a publicly available mouse dataset to investigate the relationship between GLP1R expression and downstream gene activity. The dataset includes multiple genotypes (GLP1R intact and knockout, as well as GIPR controls), two tissue types (liver and inguinal white adipose tissue), and two treatment conditions (vehicle control and mGIPR-Ab/P1, a GLP-1 receptor–targeting peptide). By comparing gene expression across these conditions, we aim to identify how GLP1R signaling influences downstream pathways and whether these effects depend on receptor presence or pharmacological activation.</p>
-<p>Specifically, we are testing whether tissues with higher GLP1R expression exhibit increased expression of downstream GLP-1 signaling pathway genes, particularly those involved in the cAMP/PKA pathway. We also examine how treatment with a GLP-1 receptor agonist alters gene expression compared to untreated controls and assess whether knockout of GLP1R disrupts these signaling patterns. Our hypothesis is that GLP1R expression will positively correlate with downstream pathway activity and that treated samples will show stronger activation of these genes compared to controls. By integrating transcriptomic data with experimental variables such as genotype, treatment, and tissue type, this study aims to provide a deeper understanding of GLP-1 signaling at the gene expression level. These findings may help explain how GLP-1–based therapies produce their metabolic effects and contribute to ongoing research in cardiometabolic disease and therapeutic development.</p>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> ## Overview</h2>
 </section>
-<section id="project-roadmap-living" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">2</span> Project roadmap (living)</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">Identify and Acquire Dataset(s)</label></li>
-</ul>
-<p>Obtain publicly available bulk RNA-seq datasets from GEO containing GLP1R-related experimental conditions, including treatment (mGIPR-Ab/P1 vs vehicle), genotype variations, and relevant tissues (liver and iWAT). Ensure datasets include complete expression matrices and metadata for downstream analysis.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Define Outcome Variables and Predictors</label></li>
-</ul>
-<p>Establish the dependent variable as the expression levels of downstream GLP-1 signaling pathway genes (primarily cAMP/PKA-associated genes). Define independent variables as treatment condition (vehicle vs GLP-1 agonist), genotype (GLP1R intact vs knockout, GIPR controls), and tissue type (liver vs adipose).</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Data Organization and Preprocessing</label></li>
-</ul>
-<p>Structure raw data into analyzable formats by aligning expression matrices with corresponding metadata. Separate datasets by tissue type, convert expression values to log2(FPKM + 1), and remove low-expression genes to reduce noise and improve statistical reliability.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Exploratory Data Analysis and Quality Control (QC)</label></li>
-</ul>
-<p>Perform Principal Component Analysis (PCA) to evaluate sample clustering, detect outliers, and confirm biological grouping based on treatment, genotype, and tissue. This step ensures data integrity prior to statistical modeling.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Define Statistical Comparisons</label></li>
-</ul>
-<p>Establish biologically meaningful comparisons, including: Treatment effect in control (fl/fl) mice GLP1R knockout vs control GIPR knockout vs control Genotype × treatment interaction</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Differential Expression Analysis (Primary Method)</label></li>
-</ul>
-<p>Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Differential Expression Analysis (Primary Method)</label></li>
-</ul>
-<p>Apply the limma linear modeling framework to identify genes that are significantly differentially expressed across defined conditions. This method is selected for its robustness with small sample sizes and compatibility with normalized RNA-seq data.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Generate Final Outputs and Visualizations</label></li>
-</ul>
-<p>PCA plots (quality control and clustering) Volcano plots (significant gene expression changes) Heatmaps (top differentially expressed genes) Summary tables (log2 fold change, adjusted p-values)</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Interpretation of Results</label></li>
-</ul>
-<p>Analyze results in the context of GLP1R signaling biology, focusing on whether increased GLP1R expression correlates with elevated downstream cAMP/PKA pathway activity and whether treatment enhances this effect.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Limitations, Validation, and Reproducibility</label></li>
-</ul>
-<p>Acknowledge limitations such as lack of single-cell resolution and protein-level validation. Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline.</p>
+<section id="background-knowledge-in-glp-1" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="background-knowledge-in-glp-1"><span class="header-section-number">2</span> ## Background Knowledge in GLP-1</h2>
 </section>
-<section id="where-to-find-things" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="where-to-find-things"><span class="header-section-number">3</span> Where to find things</h2>
-<ul>
-<li><strong>Scripts:</strong> <code>scripts/</code></li>
-<li><strong>Data notes:</strong> <code>data/README.md</code></li>
-<li><strong>Figures:</strong> <code>figures/</code></li>
-<li><strong>Citations:</strong> <code>references.bib</code></li>
-</ul>
+<section id="gap-in-knowledge" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="gap-in-knowledge"><span class="header-section-number">3</span> ## Gap In Knowledge</h2>
+</section>
+<section id="what-is-glp-1" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="what-is-glp-1"><span class="header-section-number">4</span> ## What is GLP-1</h2>
+</section>
+<section id="objective" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="objective"><span class="header-section-number">5</span> ## Objective</h2>
+</section>
+<section id="relative-literature" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="relative-literature"><span class="header-section-number">6</span> ## Relative Literature</h2>
 
 
 </section>
@@ -292,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

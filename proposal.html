@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Team – BNFO 420 Capstone</title>
+<title>Proposal – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal.html"> 
+    <a class="nav-link active" href="./proposal.html" aria-current="page"> 
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Results</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./team.html" aria-current="page"> 
+    <a class="nav-link" href="./team.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
 </ul>
@@ -126,8 +126,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#members" id="toc-members" class="nav-link active" data-scroll-target="#members"><span class="header-section-number">1</span> Members</a></li>
-  <li><a href="#collaboration-rules-simple" id="toc-collaboration-rules-simple" class="nav-link" data-scroll-target="#collaboration-rules-simple"><span class="header-section-number">2</span> Collaboration rules (simple)</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question"><span class="header-section-number">1</span> Research question</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">2</span> Dataset(s)</a></li>
+  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis"><span class="header-section-number">3</span> Planned analysis</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Team</h1>
+<h1 class="title">Proposal</h1>
 </div>
 
 
@@ -153,23 +155,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="members" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="members"><span class="header-section-number">1</span> Members</h2>
+<section id="research-question" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="research-question"><span class="header-section-number">1</span> Research question</h2>
+<p>GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples.</p>
+</section>
+<section id="datasets" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="datasets"><span class="header-section-number">2</span> Dataset(s)</h2>
 <ul>
-<li>Zoya Akhtar</li>
-<li>Saja Al Jariri</li>
-<li>Mariya Dehnuwala</li>
-<li>Courtney Sartor</li>
-<li>Khadeeja Bandukwala: Code</li>
+<li>Source: NCBI GEO Public Dataset (GSE293291)</li>
+<li>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291</li>
+<li>Sample size: 60 samples</li>
+<li>Key variables:
+<ol type="1">
+<li>Tissue type</li>
+<li>Genotype</li>
+<li>Treatment type</li>
+<li>Gene expression measurements</li>
+</ol></li>
+<li>License/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data.</li>
 </ul>
 </section>
-<section id="collaboration-rules-simple" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="collaboration-rules-simple"><span class="header-section-number">2</span> Collaboration rules (simple)</h2>
+<section id="planned-analysis" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="planned-analysis"><span class="header-section-number">3</span> Planned analysis</h2>
+<p>Describe your plan in bullets:</p>
 <ul>
-<li>Pull before you start work.</li>
-<li>Commit small changes with clear messages.</li>
-<li>Only one person edits the <em>same</em> <code>.qmd</code> file at a time.</li>
-<li>Use Issues (optional) for tasks/bugs.</li>
+<li>Data cleaning and preprocessing
+<ul>
+<li>Combine expression files into one dataset</li>
+<li>Match metadata to expression matrix (GSM IDs)</li>
+<li>Log2 transformation and filtering of low-expression genes</li>
+<li>Remove zero-variance genes before analysis</li>
+</ul></li>
+<li>Cleaning/QC
+<ul>
+<li>Perform PCA to identify clustering and outliers</li>
+<li>Evaluate variance explained by principal components</li>
+<li>Check separation by treatment and genotype</li>
+</ul></li>
+<li>Visualizations
+<ul>
+<li>PCA plots for QC</li>
+<li>Volcano plots for differential expression</li>
+<li>Heatmaps of top differentially expressed genes</li>
+</ul></li>
+<li>Statistical/ML approach
+<ul>
+<li>Build design matrix based on genotype, treatment, and tissues</li>
+<li>Fit linear model using limma</li>
+<li>Identify differentially expressed genes</li>
+</ul></li>
+<li>Validation &amp; Intrepretation
+<ul>
+<li>Compare treated vs untreated groups
+<ul>
+<li>Peptide Treatment: mGIPR-Ab/P1<br>
+</li>
+<li>Vehicle Treatment</li>
+</ul></li>
+<li>Focus on balanced comaprisons</li>
+<li>Interpret results in context of GLP-1R and cAMP/PKA pathway.</li>
+</ul></li>
+</ul>
+</section>
+<section id="deliverables" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
+<ul>
+<li>Website sections</li>
+<li>Key figures/tables
+<ol type="1">
+<li>PCA Plot for QC</li>
+<li>Volcano Plot</li>
+<li>Heatmaps</li>
+<li>Differential Expression Results Table</li>
+</ol></li>
+<li>Any optional stretch goals</li>
 </ul>
 
 
@@ -249,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
