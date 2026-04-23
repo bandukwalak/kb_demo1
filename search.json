@@ -67,21 +67,28 @@
     "href": "team.html",
     "title": "Team",
     "section": "",
-    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala: Code"
+    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
   },
   {
-    "objectID": "team.html#members",
-    "href": "team.html#members",
+    "objectID": "team.html#team-members",
+    "href": "team.html#team-members",
     "title": "Team",
     "section": "",
-    "text": "Zoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala: Code"
+    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
   },
   {
-    "objectID": "team.html#collaboration-rules-simple",
-    "href": "team.html#collaboration-rules-simple",
+    "objectID": "team.html#individual-contributions",
+    "href": "team.html#individual-contributions",
     "title": "Team",
-    "section": "2 Collaboration rules (simple)",
-    "text": "2 Collaboration rules (simple)\n\nPull before you start work.\nCommit small changes with clear messages.\nOnly one person edits the same .qmd file at a time.\nUse Issues (optional) for tasks/bugs."
+    "section": "2 Individual Contributions",
+    "text": "2 Individual Contributions\nEach team member contributed to different aspects of the analysis pipeline, presentation, and website development:\n\n2.1 Data Acquisition & Pipeline Development\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nMariya Dehnuwala\nDataset selection and GEO download; Script 03 (PCA plots); Heatmap generation\n\n\nKhadeeja Bandukwala\nScript 01 (metadata organization); Script 04 (Limma differential expression)\n\n\nZoya Akhtar\nScript 02 (normalization and filtering); Website development\n\n\nCourtney Sartor\nScript 05 (Volcano plots); Synthesis and interpretation slides\n\n\n\n\n\n2.2 Presentation & Communication\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nSaja Al Jariri\nSlide deck design and layout; GLP-1R background, hypothesis, and analysis pipeline slides\n\n\nCourtney Sartor\nSynthesis and interpretation slides\n\n\nZoya Akhtar\nWebsite development and documentation"
+  },
+  {
+    "objectID": "team.html#analysis-pipeline-overview",
+    "href": "team.html#analysis-pipeline-overview",
+    "title": "Team",
+    "section": "3 Analysis Pipeline Overview",
+    "text": "3 Analysis Pipeline Overview\nOur team built a complete RNA-seq analysis pipeline from scratch:\n\nData Acquisition (Mariya) — Downloaded and organized 60 samples from GEO accession GSE293291\nMetadata Organization (Khadeeja) — Created sample annotation table linking files to experimental conditions\nNormalization & Filtering (Zoya) — Quality control and gene filtering (54,343 → 14,152 genes)\nExploratory Analysis (Mariya) — PCA plots to validate data quality and sample clustering\nDifferential Expression (Khadeeja) — Limma analysis across four experimental comparisons\nVisualization (Courtney & Mariya) — Volcano plots and heatmaps of key findings\nInterpretation & Communication (Courtney & Saja) — Scientific synthesis and presentation design\nWebsite Development (Zoya) — Project documentation and results dissemination"
   },
   {
     "objectID": "results.html",

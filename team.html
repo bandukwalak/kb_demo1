@@ -126,8 +126,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#members" id="toc-members" class="nav-link active" data-scroll-target="#members"><span class="header-section-number">1</span> Members</a></li>
-  <li><a href="#collaboration-rules-simple" id="toc-collaboration-rules-simple" class="nav-link" data-scroll-target="#collaboration-rules-simple"><span class="header-section-number">2</span> Collaboration rules (simple)</a></li>
+  <li><a href="#team-members" id="toc-team-members" class="nav-link active" data-scroll-target="#team-members"><span class="header-section-number">1</span> Team Members</a></li>
+  <li><a href="#individual-contributions" id="toc-individual-contributions" class="nav-link" data-scroll-target="#individual-contributions"><span class="header-section-number">2</span> Individual Contributions</a>
+  <ul class="collapse">
+  <li><a href="#data-acquisition-pipeline-development" id="toc-data-acquisition-pipeline-development" class="nav-link" data-scroll-target="#data-acquisition-pipeline-development"><span class="header-section-number">2.1</span> Data Acquisition &amp; Pipeline Development</a></li>
+  <li><a href="#presentation-communication" id="toc-presentation-communication" class="nav-link" data-scroll-target="#presentation-communication"><span class="header-section-number">2.2</span> Presentation &amp; Communication</a></li>
+  </ul></li>
+  <li><a href="#analysis-pipeline-overview" id="toc-analysis-pipeline-overview" class="nav-link" data-scroll-target="#analysis-pipeline-overview"><span class="header-section-number">3</span> Analysis Pipeline Overview</a></li>
   </ul>
 </nav>
     </div>
@@ -153,24 +158,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="members" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="members"><span class="header-section-number">1</span> Members</h2>
+<section id="team-members" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="team-members"><span class="header-section-number">1</span> Team Members</h2>
+<p>This project was completed by a team of five students in BNFO 420 Capstone:</p>
 <ul>
-<li>Zoya Akhtar</li>
-<li>Saja Al Jariri</li>
-<li>Mariya Dehnuwala</li>
-<li>Courtney Sartor</li>
-<li>Khadeeja Bandukwala: Code</li>
+<li><strong>Zoya Akhtar</strong></li>
+<li><strong>Saja Al Jariri</strong></li>
+<li><strong>Mariya Dehnuwala</strong></li>
+<li><strong>Courtney Sartor</strong></li>
+<li><strong>Khadeeja Bandukwala</strong></li>
 </ul>
+<hr>
 </section>
-<section id="collaboration-rules-simple" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="collaboration-rules-simple"><span class="header-section-number">2</span> Collaboration rules (simple)</h2>
-<ul>
-<li>Pull before you start work.</li>
-<li>Commit small changes with clear messages.</li>
-<li>Only one person edits the <em>same</em> <code>.qmd</code> file at a time.</li>
-<li>Use Issues (optional) for tasks/bugs.</li>
-</ul>
+<section id="individual-contributions" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="individual-contributions"><span class="header-section-number">2</span> Individual Contributions</h2>
+<p>Each team member contributed to different aspects of the analysis pipeline, presentation, and website development:</p>
+<section id="data-acquisition-pipeline-development" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="data-acquisition-pipeline-development"><span class="header-section-number">2.1</span> Data Acquisition &amp; Pipeline Development</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Team Member</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mariya Dehnuwala</strong></td>
+<td>Dataset selection and GEO download; Script 03 (PCA plots); Heatmap generation</td>
+</tr>
+<tr class="even">
+<td><strong>Khadeeja Bandukwala</strong></td>
+<td>Script 01 (metadata organization); Script 04 (Limma differential expression)</td>
+</tr>
+<tr class="odd">
+<td><strong>Zoya Akhtar</strong></td>
+<td>Script 02 (normalization and filtering); Website development</td>
+</tr>
+<tr class="even">
+<td><strong>Courtney Sartor</strong></td>
+<td>Script 05 (Volcano plots); Synthesis and interpretation slides</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="presentation-communication" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="presentation-communication"><span class="header-section-number">2.2</span> Presentation &amp; Communication</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Team Member</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Saja Al Jariri</strong></td>
+<td>Slide deck design and layout; GLP-1R background, hypothesis, and analysis pipeline slides</td>
+</tr>
+<tr class="even">
+<td><strong>Courtney Sartor</strong></td>
+<td>Synthesis and interpretation slides</td>
+</tr>
+<tr class="odd">
+<td><strong>Zoya Akhtar</strong></td>
+<td>Website development and documentation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="analysis-pipeline-overview" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="analysis-pipeline-overview"><span class="header-section-number">3</span> Analysis Pipeline Overview</h2>
+<p>Our team built a complete RNA-seq analysis pipeline from scratch:</p>
+<ol type="1">
+<li><strong>Data Acquisition</strong> (Mariya) — Downloaded and organized 60 samples from GEO accession GSE293291</li>
+<li><strong>Metadata Organization</strong> (Khadeeja) — Created sample annotation table linking files to experimental conditions</li>
+<li><strong>Normalization &amp; Filtering</strong> (Zoya) — Quality control and gene filtering (54,343 → 14,152 genes)</li>
+<li><strong>Exploratory Analysis</strong> (Mariya) — PCA plots to validate data quality and sample clustering</li>
+<li><strong>Differential Expression</strong> (Khadeeja) — Limma analysis across four experimental comparisons</li>
+<li><strong>Visualization</strong> (Courtney &amp; Mariya) — Volcano plots and heatmaps of key findings</li>
+<li><strong>Interpretation &amp; Communication</strong> (Courtney &amp; Saja) — Scientific synthesis and presentation design</li>
+<li><strong>Website Development</strong> (Zoya) — Project documentation and results dissemination</li>
+</ol>
+<hr>
 
 
 </section>
