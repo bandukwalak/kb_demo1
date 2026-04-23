@@ -48,7 +48,89 @@ Understanding these mechanisms could inform the development of more targeted the
 
 The **mGIPR-Ab/P1 agonist** used in this study is a dual agonist that activates both GLP-1R and GIPR, allowing us to assess combined incretin signaling effects.
 
----
+## The GIPR Connection: An Unexpected Key Player
+
+While GLP-1R has received significant attention in metabolic research, **GIPR (Glucose-Dependent Insulinotropic Polypeptide Receptor)** is emerging as an equally important—and in some contexts, more influential—regulator of metabolism.
+
+### What is GIPR?
+
+GIPR is the receptor for GIP (glucose-dependent insulinotropic polypeptide, formerly known as gastric inhibitory polypeptide), another incretin hormone secreted by intestinal K-cells. Like GLP-1R, GIPR is a class B G-protein coupled receptor that signals primarily through the **cAMP/PKA pathway**.
+
+**Key characteristics of GIPR:**
+
+- **Tissue distribution:** Pancreatic beta cells, adipose tissue, bone, brain (hypothalamus), liver
+- **Primary functions:** Enhances glucose-stimulated insulin secretion, promotes fat storage in adipose tissue, regulates bone metabolism
+- **Signaling mechanism:** Gαs → adenylyl cyclase → cAMP → PKA (identical to GLP-1R)
+- **Clinical relevance:** Target of dual GLP-1R/GIPR agonists showing superior efficacy to GLP-1R-only drugs
+
+### Why GIPR Matters: The Dual Agonist Revolution
+
+Recent clinical trials have shown that **dual GLP-1R/GIPR agonists** produce dramatically better outcomes than GLP-1R agonists alone:
+
+- **Tirzepatide (Mounjaro/Zepbound):** Dual agonist approved in 2022
+  - Up to 22.5% body weight loss (vs 15% for semaglutide)
+  - Superior glycemic control in type 2 diabetes
+  - Marketed as "twincretin" technology
+
+- **Retatrutide:** Triple agonist (GLP-1R/GIPR/glucagon receptor) in clinical trials
+  - Early data shows up to 24% weight loss
+  - Demonstrates additive/synergistic effects of incretin receptor co-activation
+
+These clinical observations raised a critical question: **What is GIPR actually doing at the molecular level that makes dual agonism so effective?**
+
+### GIPR in the Brain: A CNS-Peripheral Metabolic Axis
+
+Emerging research suggests GIPR plays a crucial role in **brain-to-periphery metabolic signaling:**
+
+**Central GIPR activation:**
+- Expressed in hypothalamic regions controlling appetite and energy expenditure
+- May regulate food intake independently of GLP-1R
+- Influences peripheral glucose and lipid metabolism through autonomic nervous system output
+
+**The CNS-liver axis:**
+- GIPR knockout in the central nervous system affects hepatic (liver) gene expression
+- Suggests brain GIPR sends signals to the liver to regulate metabolism
+- May explain why systemic GIPR activation has whole-body metabolic effects
+
+**Potential mechanisms:**
+- Vagal nerve signaling from brain to liver
+- Sympathetic nervous system regulation of adipose tissue lipolysis
+- Hormonal signals (e.g., changes in insulin, glucagon secretion patterns)
+
+### Why This Project Investigates GIPR
+
+Our dataset (GSE293291) includes **CNS-specific GIPR knockout mice**, allowing us to ask:
+
+1. How does removing brain GIPR affect liver and adipose tissue gene expression?
+2. Is GIPR's role in metabolism comparable to, independent from, or synergistic with GLP-1R?
+3. Do GIPR knockout effects help explain why dual agonists outperform single-receptor drugs?
+
+**What we discovered** challenged our initial assumptions about the relative importance of these two receptors (see Results).
+
+### GIPR vs GLP-1R: Similarities and Differences
+
+| Feature | GLP-1R | GIPR |
+|---------|--------|------|
+| **Primary role** | Insulin secretion, appetite suppression | Insulin secretion, nutrient partitioning |
+| **Effect on body weight** | Decreases (via appetite suppression) | Complex (promotes fat storage, but dual agonists cause weight loss) |
+| **CNS expression** | High in brainstem, hypothalamus | Moderate in hypothalamus |
+| **Adipose tissue effects** | Indirect (via CNS, reduced intake) | Direct (promotes lipid uptake) + indirect (via CNS) |
+| **Therapeutic focus** | Primary target for diabetes/obesity drugs | Emerging co-target in dual agonists |
+| **Gene expression effects (this study)** | Modest in liver, stronger in adipose | **Unexpectedly large in liver knockout** |
+
+### The GIPR Paradox
+
+One of the most puzzling aspects of GIPR biology is the **"GIPR paradox":**
+
+- **In isolation:** GIPR activation promotes fat storage (lipogenesis) in adipose tissue
+- **In dual agonists:** GIPR + GLP-1R activation causes massive fat loss
+
+**Proposed explanations:**
+1. **Context-dependent signaling:** GIPR effects may differ in fed vs fasted states
+2. **CNS-mediated effects dominate:** Brain GIPR activation overrides peripheral fat-storing effects
+3. **Synergistic pathway crosstalk:** Combined activation creates unique signaling outputs not seen with either receptor alone
+
+Our project specifically examines **CNS GIPR knockout**, which may help clarify whether brain or peripheral GIPR drives the metabolic effects seen with dual agonists.---
 
 ## Objective
 
