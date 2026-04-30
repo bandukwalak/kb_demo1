@@ -7,7 +7,7 @@ GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA 
 
 ## Dataset(s)
 - Source: NCBI GEO Public Dataset (GSE293291)
-- https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291 
+- [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291) 
 - Sample size: 
     60 samples
 - Key variables: 
