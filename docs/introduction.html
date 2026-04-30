@@ -127,15 +127,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#research-question-and-hypothesis" id="toc-research-question-and-hypothesis" class="nav-link" data-scroll-target="#research-question-and-hypothesis">Research Question and Hypothesis</a></li>
   <li><a href="#background-knowledge-on-glp-1" id="toc-background-knowledge-on-glp-1" class="nav-link" data-scroll-target="#background-knowledge-on-glp-1">Background Knowledge on GLP-1</a></li>
   <li><a href="#gap-in-knowledge" id="toc-gap-in-knowledge" class="nav-link" data-scroll-target="#gap-in-knowledge">Gap in Knowledge</a></li>
   <li><a href="#what-is-glp-1r" id="toc-what-is-glp-1r" class="nav-link" data-scroll-target="#what-is-glp-1r">What is GLP-1R?</a></li>
-  <li><a href="#relevant-literature" id="toc-relevant-literature" class="nav-link" data-scroll-target="#relevant-literature">Relevant Literature</a>
-  <ul class="collapse">
-  <li><a href="#key-studies-on-incretin-biology" id="toc-key-studies-on-incretin-biology" class="nav-link" data-scroll-target="#key-studies-on-incretin-biology">Key Studies on Incretin Biology</a></li>
-  <li><a href="#methodological-references" id="toc-methodological-references" class="nav-link" data-scroll-target="#methodological-references">Methodological References</a></li>
-  <li><a href="#dataset-source" id="toc-dataset-source" class="nav-link" data-scroll-target="#dataset-source">Dataset Source</a></li>
-  </ul></li>
   <li><a href="#the-gip-receptor-and-its-unexpected-role" id="toc-the-gip-receptor-and-its-unexpected-role" class="nav-link" data-scroll-target="#the-gip-receptor-and-its-unexpected-role">The GIP Receptor and Its Unexpected Role</a>
   <ul class="collapse">
   <li><a href="#what-is-gipr" id="toc-what-is-gipr" class="nav-link" data-scroll-target="#what-is-gipr">What is GIPR?</a></li>
@@ -144,8 +140,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-this-means" id="toc-what-this-means" class="nav-link" data-scroll-target="#what-this-means">What This Means</a></li>
   <li><a href="#implications-for-dual-agonist-therapy" id="toc-implications-for-dual-agonist-therapy" class="nav-link" data-scroll-target="#implications-for-dual-agonist-therapy">Implications for Dual Agonist Therapy</a></li>
   </ul></li>
-  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#research-question-and-hypothesis" id="toc-research-question-and-hypothesis" class="nav-link" data-scroll-target="#research-question-and-hypothesis">Research Question and Hypothesis</a></li>
+  <li><a href="#relevant-literature" id="toc-relevant-literature" class="nav-link" data-scroll-target="#relevant-literature">Relevant Literature</a>
+  <ul class="collapse">
+  <li><a href="#key-studies-on-incretin-biology" id="toc-key-studies-on-incretin-biology" class="nav-link" data-scroll-target="#key-studies-on-incretin-biology">Key Studies on Incretin Biology</a></li>
+  <li><a href="#methodological-references" id="toc-methodological-references" class="nav-link" data-scroll-target="#methodological-references">Methodological References</a></li>
+  <li><a href="#dataset-source" id="toc-dataset-source" class="nav-link" data-scroll-target="#dataset-source">Dataset Source</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -179,6 +179,27 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>GLP-1 receptor agonists like semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro) have revolutionized treatment for type 2 diabetes and obesity. However, the molecular mechanisms underlying their therapeutic effects remain incompletely understood. This project investigates how GLP-1 receptor (GLP-1R) signaling affects gene expression in metabolically active tissues using RNA-seq data from mice treated with a dual GLP-1R/GIPR agonist (mGIPR-Ab/P1). Our analysis revealed tissue-specific responses, unexpected GIPR dominance in regulating peripheral gene expression, and modest transcriptional changes in the predicted cAMP/PKA pathway.</p>
 <hr>
+</section>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>This project aims to characterize the transcriptional response to GLP-1R signaling in liver and adipose tissue using published RNA-seq data from GEO (GSE293291). The dataset includes 60 samples across 4 genotypes, 2 treatment conditions, and 2 tissues.</p>
+<p><strong>Specific objectives include:</strong></p>
+<ol type="1">
+<li><strong>Test the hypothesis</strong> that GLP-1R activation increases expression of cAMP/PKA pathway genes (PRKACA, PRKACB, CREB1, etc.)</li>
+<li><strong>Compare treatment effects</strong> (mGIPR-Ab/P1 dual agonist drug) with receptor knockout models (CNS-specific GLP-1R knockout and GIPR knockout) to distinguish direct receptor-mediated effects</li>
+<li><strong>Evaluate tissue-specific responses</strong> between liver and inguinal white adipose tissue (iWAT)</li>
+<li><strong>Assess the relative importance of GIPR</strong> versus GLP-1R in regulating peripheral gene expression through CNS-mediated pathways</li>
+<li><strong>Identify differentially expressed genes</strong> that may contribute to the metabolic benefits of incretin-based therapies</li>
+</ol>
+<hr>
+</section>
+<section id="research-question-and-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="research-question-and-hypothesis">Research Question and Hypothesis</h2>
+<p><strong>Research Question:</strong><br>
+Do cells that express GLP-1R show increased expression of downstream cAMP/PKA pathway genes in response to receptor activation?</p>
+<p><strong>Hypothesis:</strong><br>
+We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upregulate GLP-1R expression and activate downstream cAMP/PKA pathway genes in both liver and adipose tissue, with similar effects across both tissues.</p>
+<p><strong>Independent Variable:</strong> Treatment condition (vehicle control vs.&nbsp;mGIPR-Ab/P1 dual agonist)</p>
 </section>
 <section id="background-knowledge-on-glp-1" class="level2">
 <h2 class="anchored" data-anchor-id="background-knowledge-on-glp-1">Background Knowledge on GLP-1</h2>
@@ -217,32 +238,6 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>GIPR (Glucose-Dependent Insulinotropic Polypeptide Receptor)</strong> is a related incretin receptor that responds to GIP hormone. It shares similar downstream signaling pathways and tissue distribution with GLP-1R. Dual GLP-1R/GIPR agonists like tirzepatide show superior efficacy compared to GLP-1R-only drugs, suggesting complementary or synergistic mechanisms.</p>
 <p>The <strong>mGIPR-Ab/P1 agonist</strong> used in this study is a dual agonist that activates both GLP-1R and GIPR, allowing us to assess combined incretin signaling effects.</p>
 <hr>
-<p><strong>Dependent Variable:</strong> Expression levels of cAMP/PKA pathway genes and genome-wide gene expression patterns</p>
-<hr>
-</section>
-<section id="relevant-literature" class="level2">
-<h2 class="anchored" data-anchor-id="relevant-literature">Relevant Literature</h2>
-<section id="key-studies-on-incretin-biology" class="level3">
-<h3 class="anchored" data-anchor-id="key-studies-on-incretin-biology">Key Studies on Incretin Biology</h3>
-<p><strong>Campbell, J. E., &amp; Drucker, D. J. (2013).</strong> Pharmacology, physiology, and mechanisms of incretin hormone action. <em>Cell Metabolism, 17</em>(6), 819-837.<br>
-- Comprehensive review of GLP-1 and GIP signaling mechanisms, tissue distribution, and therapeutic applications</p>
-<p><strong>Müller, T. D., et al.&nbsp;(2019).</strong> Glucagon-like peptide 1 (GLP-1). <em>Molecular Metabolism, 30</em>, 72-130.<br>
-- Detailed overview of GLP-1 biology, including CNS-mediated metabolic effects and receptor signaling pathways</p>
-<p><strong>Holst, J. J., &amp; Rosenkilde, M. M. (2020).</strong> GIP as a therapeutic target in diabetes and obesity: Insight from incretin co-agonists. <em>Journal of Clinical Endocrinology &amp; Metabolism, 105</em>(8), e2710-e2716.<br>
-- Discusses the rationale for dual GLP-1R/GIPR agonists and the complementary roles of these receptors</p>
-</section>
-<section id="methodological-references" class="level3">
-<h3 class="anchored" data-anchor-id="methodological-references">Methodological References</h3>
-<p><strong>Ritchie, M. E., et al.&nbsp;(2015).</strong> limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research, 43</em>(7), e47.<br>
-- The statistical method (Limma) used for differential expression analysis in this project</p>
-<p><strong>Love, M. I., Huber, W., &amp; Anders, S. (2014).</strong> Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology, 15</em>(12), 550.<br>
-- Reference for normalization methods used in RNA-seq analysis</p>
-</section>
-<section id="dataset-source" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-source">Dataset Source</h3>
-<p><strong>Zhu, Z., et al.&nbsp;(2024).</strong> GSE293291: RNA-seq analysis of liver and adipose tissue from GLP-1R and GIPR knockout mice treated with mGIPR-Ab/P1. <em>NCBI Gene Expression Omnibus.</em><br>
-- The published dataset used in this project, containing approximately 54,000 genes measured across 60 samples representing: - <strong>Genotypes:</strong> Wild-type (Glp1r fl/fl), CNS-specific GLP-1R knockout (Glp1r Wnt1-/-), CNS-specific GIPR knockout (Gipr Syn-/-) - <strong>Treatments:</strong> Vehicle control, mGIPR-Ab/P1 dual agonist - <strong>Tissues:</strong> Liver and inguinal white adipose tissue (iWAT)</p>
-</section>
 </section>
 <section id="the-gip-receptor-and-its-unexpected-role" class="level2">
 <h2 class="anchored" data-anchor-id="the-gip-receptor-and-its-unexpected-role">The GIP Receptor and Its Unexpected Role</h2>
@@ -272,28 +267,31 @@ ul.task-list li input[type="checkbox"] {
 <p>The drug used in our study, mGIPR-Ab/P1, is a dual-acting compound that blocks GIPR while activating GLP-1R. Our finding that GIPR deletion causes large transcriptional changes in liver raises an interesting question about how this dual mechanism contributes to the drug’s overall therapeutic effect. Future research should examine whether the transcriptional changes we observed in the GIPR knockout overlap with changes caused by the drug, which could help clarify the specific contribution of GIPR blockade to the drug’s metabolic benefits.</p>
 </section>
 </section>
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>This project aims to characterize the transcriptional response to GLP-1R signaling in liver and adipose tissue using published RNA-seq data from GEO (GSE293291). The dataset includes 60 samples across 4 genotypes, 2 treatment conditions, and 2 tissues.</p>
-<p><strong>Specific objectives include:</strong></p>
-<ol type="1">
-<li><strong>Test the hypothesis</strong> that GLP-1R activation increases expression of cAMP/PKA pathway genes (PRKACA, PRKACB, CREB1, etc.)</li>
-<li><strong>Compare treatment effects</strong> (mGIPR-Ab/P1 dual agonist drug) with receptor knockout models (CNS-specific GLP-1R knockout and GIPR knockout) to distinguish direct receptor-mediated effects</li>
-<li><strong>Evaluate tissue-specific responses</strong> between liver and inguinal white adipose tissue (iWAT)</li>
-<li><strong>Assess the relative importance of GIPR</strong> versus GLP-1R in regulating peripheral gene expression through CNS-mediated pathways</li>
-<li><strong>Identify differentially expressed genes</strong> that may contribute to the metabolic benefits of incretin-based therapies</li>
-</ol>
-<hr>
+<section id="relevant-literature" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-literature">Relevant Literature</h2>
+<section id="key-studies-on-incretin-biology" class="level3">
+<h3 class="anchored" data-anchor-id="key-studies-on-incretin-biology">Key Studies on Incretin Biology</h3>
+<p><strong>Campbell, J. E., &amp; Drucker, D. J. (2013).</strong> Pharmacology, physiology, and mechanisms of incretin hormone action. <em>Cell Metabolism, 17</em>(6), 819-837.<br>
+- Comprehensive review of GLP-1 and GIP signaling mechanisms, tissue distribution, and therapeutic applications</p>
+<p><strong>Müller, T. D., et al.&nbsp;(2019).</strong> Glucagon-like peptide 1 (GLP-1). <em>Molecular Metabolism, 30</em>, 72-130.<br>
+- Detailed overview of GLP-1 biology, including CNS-mediated metabolic effects and receptor signaling pathways</p>
+<p><strong>Holst, J. J., &amp; Rosenkilde, M. M. (2020).</strong> GIP as a therapeutic target in diabetes and obesity: Insight from incretin co-agonists. <em>Journal of Clinical Endocrinology &amp; Metabolism, 105</em>(8), e2710-e2716.<br>
+- Discusses the rationale for dual GLP-1R/GIPR agonists and the complementary roles of these receptors</p>
 </section>
-<section id="research-question-and-hypothesis" class="level2">
-<h2 class="anchored" data-anchor-id="research-question-and-hypothesis">Research Question and Hypothesis</h2>
-<p><strong>Research Question:</strong><br>
-Do cells that express GLP-1R show increased expression of downstream cAMP/PKA pathway genes in response to receptor activation?</p>
-<p><strong>Hypothesis:</strong><br>
-We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upregulate GLP-1R expression and activate downstream cAMP/PKA pathway genes in both liver and adipose tissue, with similar effects across both tissues.</p>
-<p><strong>Independent Variable:</strong> Treatment condition (vehicle control vs.&nbsp;mGIPR-Ab/P1 dual agonist)</p>
+<section id="methodological-references" class="level3">
+<h3 class="anchored" data-anchor-id="methodological-references">Methodological References</h3>
+<p><strong>Ritchie, M. E., et al.&nbsp;(2015).</strong> limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research, 43</em>(7), e47.<br>
+- The statistical method (Limma) used for differential expression analysis in this project</p>
+<p><strong>Love, M. I., Huber, W., &amp; Anders, S. (2014).</strong> Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology, 15</em>(12), 550.<br>
+- Reference for normalization methods used in RNA-seq analysis</p>
+</section>
+<section id="dataset-source" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-source">Dataset Source</h3>
+<p><strong>Zhu, Z., et al.&nbsp;(2024).</strong> GSE293291: RNA-seq analysis of liver and adipose tissue from GLP-1R and GIPR knockout mice treated with mGIPR-Ab/P1. <em>NCBI Gene Expression Omnibus.</em><br>
+- The published dataset used in this project, containing approximately 54,000 genes measured across 60 samples representing: - <strong>Genotypes:</strong> Wild-type (Glp1r fl/fl), CNS-specific GLP-1R knockout (Glp1r Wnt1-/-), CNS-specific GIPR knockout (Gipr Syn-/-) - <strong>Treatments:</strong> Vehicle control, mGIPR-Ab/P1 dual agonist - <strong>Tissues:</strong> Liver and inguinal white adipose tissue (iWAT)</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

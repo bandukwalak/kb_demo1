@@ -117,6 +117,17 @@ and reproducible pattern of gene expression changes across all samples.
 
 This heatmap focuses on the three most significantly differentially expressed
 genes from the liver treatment comparison. The pattern of expression across
+treated and vehicle samples is even clearer here, confirming these genes are
+the strongest and most consistent responders to the drug treatment.
+
+![Heatmap Top 3 DEGs](figures/heatmap_top3.png)
+
+---
+
+### Top 3 Most Significant Genes
+
+This heatmap focuses on the three most significantly differentially expressed
+genes from the liver treatment comparison. The pattern of expression across
 treated and vehicle samples is even clearer here, confirming that these genes
 are the strongest and most consistent responders to the drug treatment.
 
