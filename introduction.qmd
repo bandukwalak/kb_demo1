@@ -50,29 +50,7 @@ The **mGIPR-Ab/P1 agonist** used in this study is a dual agonist that activates 
 
 ---
 
-## Objective
 
-This project aims to characterize the transcriptional response to GLP-1R signaling in liver and adipose tissue using published RNA-seq data from GEO (GSE293291). The dataset includes 60 samples across 4 genotypes, 2 treatment conditions, and 2 tissues.
-
-**Specific objectives include:**
-
-1. **Test the hypothesis** that GLP-1R activation increases expression of cAMP/PKA pathway genes (PRKACA, PRKACB, CREB1, etc.)
-2. **Compare treatment effects** (mGIPR-Ab/P1 dual agonist drug) with receptor knockout models (CNS-specific GLP-1R knockout and GIPR knockout) to distinguish direct receptor-mediated effects
-3. **Evaluate tissue-specific responses** between liver and inguinal white adipose tissue (iWAT)
-4. **Assess the relative importance of GIPR** versus GLP-1R in regulating peripheral gene expression through CNS-mediated pathways
-5. **Identify differentially expressed genes** that may contribute to the metabolic benefits of incretin-based therapies
-
----
-
-## Research Question and Hypothesis
-
-**Research Question:**  
-Do cells that express GLP-1R show increased expression of downstream cAMP/PKA pathway genes in response to receptor activation?
-
-**Hypothesis:**  
-We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upregulate GLP-1R expression and activate downstream cAMP/PKA pathway genes in both liver and adipose tissue, with similar effects across both tissues.
-
-**Independent Variable:** Treatment condition (vehicle control vs. mGIPR-Ab/P1 dual agonist)  
 **Dependent Variable:** Expression levels of cAMP/PKA pathway genes and genome-wide gene expression patterns
 
 ---
@@ -139,19 +117,27 @@ This does not contradict the established role of GLP-1R in metabolic regulation.
 
 The drug used in our study, mGIPR-Ab/P1, is a dual-acting compound that blocks GIPR while activating GLP-1R. Our finding that GIPR deletion causes large transcriptional changes in liver raises an interesting question about how this dual mechanism contributes to the drug's overall therapeutic effect. Future research should examine whether the transcriptional changes we observed in the GIPR knockout overlap with changes caused by the drug, which could help clarify the specific contribution of GIPR blockade to the drug's metabolic benefits.
 
-## The GIP Receptor
 
-### Background
-The glucose-dependent insulinotropic polypeptide receptor (GIPR) is a G protein-coupled receptor that binds GIP, the other major incretin hormone alongside GLP-1. Like GLP-1R, GIPR signals through the cAMP/PKA pathway and is expressed across multiple tissues including the pancreas, brain, liver, and adipose tissue. While GIP was historically considered less therapeutically important than GLP-1, more recent research has revealed significant roles for GIPR in fat metabolism, energy balance, and CNS-mediated metabolic regulation.
+## Objective
 
-### GIPR in the Brain
-Both GLP-1R and GIPR are expressed in CNS regions involved in appetite and energy regulation including the hypothalamus and brainstem. Our project used a CNS-specific GIPR knockout model where the receptor was deleted from synapsin-expressing neurons, isolating the contribution of brain GIPR signaling to peripheral gene expression without affecting other tissues.
+This project aims to characterize the transcriptional response to GLP-1R signaling in liver and adipose tissue using published RNA-seq data from GEO (GSE293291). The dataset includes 60 samples across 4 genotypes, 2 treatment conditions, and 2 tissues.
 
-### What Our Data Showed
-The GIPR knockout comparison produced the most striking result of the entire project. Comparing Gipr Syn-/- mice against Gipr fl/fl controls in liver tissue revealed 299 upregulated and 161 downregulated genes — far more than any other comparison including drug treatment and the GLP-1R knockout. This was unexpected because our hypothesis focused primarily on GLP-1R as the main driver of downstream signaling.
+**Specific objectives include:**
 
-### The Brain-Liver Axis Through GIPR
-This finding points to an important brain-liver axis mediated through GIPR. The brain appears to use the GIP receptor to regulate gene expression in peripheral tissues like the liver, and this regulation produces more transcriptional changes than pharmacological GLP-1R activation. Rather than contradicting the established role of GLP-1R, this suggests the two receptor systems work in parallel with complementary roles — GLP-1R may drive acute metabolic responses while GIPR in the CNS contributes to baseline transcriptional regulation of peripheral tissues.
+1. **Test the hypothesis** that GLP-1R activation increases expression of cAMP/PKA pathway genes (PRKACA, PRKACB, CREB1, etc.)
+2. **Compare treatment effects** (mGIPR-Ab/P1 dual agonist drug) with receptor knockout models (CNS-specific GLP-1R knockout and GIPR knockout) to distinguish direct receptor-mediated effects
+3. **Evaluate tissue-specific responses** between liver and inguinal white adipose tissue (iWAT)
+4. **Assess the relative importance of GIPR** versus GLP-1R in regulating peripheral gene expression through CNS-mediated pathways
+5. **Identify differentially expressed genes** that may contribute to the metabolic benefits of incretin-based therapies
 
-### Implications for Dual Agonist Therapy
-The drug used in our study, mGIPR-Ab/P1, blocks GIPR while activating GLP-1R. Our finding that GIPR deletion causes large transcriptional changes in liver raises an important question about how this dual mechanism contributes to the drug's therapeutic effect. Future research should examine whether the transcriptional changes we observed in the GIPR knockout overlap with changes caused by the drug, which could clarify the specific contribution of GIPR blockade to the drug's metabolic benefits.
+---
+
+## Research Question and Hypothesis
+
+**Research Question:**  
+Do cells that express GLP-1R show increased expression of downstream cAMP/PKA pathway genes in response to receptor activation?
+
+**Hypothesis:**  
+We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upregulate GLP-1R expression and activate downstream cAMP/PKA pathway genes in both liver and adipose tissue, with similar effects across both tissues.
+
+**Independent Variable:** Treatment condition (vehicle control vs. mGIPR-Ab/P1 dual agonist)  
