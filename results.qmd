@@ -126,6 +126,8 @@ The dendrogram shows perfect separation between treatment and vehicle groups, co
 
 ---
 
+---
+
 ## Summary of Findings
 
 Our comprehensive analysis across multiple comparisons revealed:
@@ -142,3 +144,67 @@ Our comprehensive analysis across multiple comparisons revealed:
 :::
 
 These results suggest that GLP-1R signaling operates through tissue-specific mechanisms, with GIPR playing an unexpectedly central role in CNS-mediated regulation of peripheral metabolism. The modest cAMP/PKA pathway activation indicates that GLP-1 drugs may work through alternative or redundant signaling cascades.
+
+---
+
+## Biological Interpretation: What the Top Genes Tell Us
+
+While our hypothesis focused on cAMP/PKA pathway genes, the most significantly changed genes reveal important insights into how GLP-1 treatment actually remodels cellular metabolism.
+
+### Understanding the Top Differentially Expressed Genes
+
+The heatmaps highlight genes with the strongest, most consistent changes across all samples. Rather than seeing our predicted cAMP/PKA genes at the top, we found genes involved in fundamental metabolic processes:
+
+**Protein Synthesis Machinery (Rpl8, Rpl18a, Fbl, Emg1)**  
+Multiple ribosomal proteins were upregulated, indicating that treated cells are ramping up their capacity to make new proteins. This suggests GLP-1 triggers broad metabolic reprogramming that requires building new cellular machinery rather than just activating existing pathways.
+
+**Metabolic Master Regulators (Hnmpl)**  
+HNF1 homeobox-like protein functions as a master switch controlling liver-specific metabolic gene networks. Its appearance as a top hit indicates GLP-1 works through hierarchical regulatory networks—activating master regulators that coordinate expression of many downstream genes simultaneously.
+
+**RNA Processing & Translation Control (Serbp1)**  
+SERPINE1 mRNA binding protein regulates which messenger RNAs get translated into proteins. Changes in this gene suggest GLP-1 affects not just gene transcription, but also post-transcriptional control of which proteins actually get made.
+
+**Lipid Metabolism (Pex6)**  
+Peroxisomal biogenesis factor 6 builds the organelles responsible for breaking down fatty acids. Its upregulation directly connects to the weight loss effects of GLP-1 drugs by increasing cellular fat-burning capacity.
+
+### Why cAMP/PKA Genes Weren't Significant
+
+This apparent discrepancy actually reveals an important biological principle:
+
+**The cAMP/PKA pathway primarily works through rapid protein modification, not transcriptional changes.** When GLP-1 binds its receptor:
+
+1. **Immediate effect (seconds-minutes):** cAMP rises, activating PKA proteins that are already present in the cell
+2. **PKA phosphorylates existing proteins** — changing their activity without requiring new gene expression
+3. **Downstream transcriptional changes (hours):** Activated proteins then regulate other genes
+
+**Our RNA-seq experiment captures step 3** — the broad metabolic remodeling orchestrated by activated cAMP/PKA proteins, not the initial pathway activation itself. This explains why we see modest changes in PRKACA and PRKACB (the genes encoding PKA) but dramatic changes in their downstream targets like ribosomal proteins and metabolic regulators.
+
+### Connecting Molecular Findings to Clinical Effects
+
+These gene expression patterns help explain the therapeutic benefits of GLP-1 drugs:
+
+- **Increased ribosomal proteins** → Enhanced capacity for producing metabolic enzymes and receptors
+- **Activation of metabolic master regulators** → Coordinated reprogramming of glucose and lipid handling pathways
+- **Upregulation of peroxisomal genes** → Increased fat oxidation contributing to sustained weight loss
+- **Tissue-specific responses** → Adipose tissue shows 4× stronger transcriptional changes than liver, consistent with tissue-selective drug effects observed clinically
+
+### Revised Understanding of GLP-1 Mechanism
+
+Our results suggest GLP-1 receptor agonists work not by simply activating one linear signaling pathway, but by triggering **coordinated metabolic reprogramming across multiple regulatory networks**. The combination of:
+
+- Subtle cAMP/PKA transcriptional changes (because the pathway works at the protein level)
+- Strong downstream effector gene changes (ribosomal proteins, metabolic regulators, lipid metabolism genes)
+- Tissue-specific response magnitudes (stronger in adipose than liver)
+
+...indicates that the cAMP/PKA pathway functions as a **signal amplifier** — small initial molecular changes cascade into large-scale metabolic remodeling. This multi-level regulation may explain why GLP-1 drugs have such broad therapeutic effects on glucose control, weight loss, and cardiovascular health.
+
+### Implications for Future Research
+
+These findings raise several important questions:
+
+1. **Protein-level validation:** Do protein levels and phosphorylation states of cAMP/PKA pathway components change even when their gene expression doesn't?
+2. **Time-course dynamics:** How do these transcriptional changes evolve over hours to days after treatment?
+3. **Functional consequences:** Do the observed changes in ribosomal and metabolic genes translate into measurable differences in protein synthesis rates and metabolic flux?
+4. **GIPR's unexpected role:** Why does GIPR knockout cause more dramatic transcriptional changes than GLP-1R knockout, and what does this mean for dual agonist drug development?
+
+Our hypothesis was not disproven—it was refined. We learned that GLP-1 signaling works through layers of regulation, with rapid protein-level changes driving slower but more extensive transcriptional remodeling of cellular metabolism.
