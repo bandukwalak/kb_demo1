@@ -2,34 +2,27 @@ project:
   type: website
   output-dir: docs
 
-bibliography: references.bib
-
 website:
-  title: "BNFO 420 Capstone"
+  title: "GLP-1R & cAMP/PKA Signaling"
   navbar:
+    background: "#8B2020"
+    foreground: white
     left:
       - href: index.qmd
         text: Home
-      - href: proposal.qmd
-        text: Proposal
       - href: introduction.qmd
         text: Introduction
+      - href: proposal.qmd
+        text: Methods
       - href: results.qmd
         text: Results
       - href: team.qmd
         text: Team
-  page-footer:
-    left: "BNFO 420 • VCU"
-    right: "Built with Quarto"
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
-    number-sections: true
-
-execute:
-  echo: true
-  warning: false 
-  message: false
+    toc-location: left
+    smooth-scroll: true

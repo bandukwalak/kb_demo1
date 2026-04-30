@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – BNFO 420 Capstone</title>
+<title>Introduction – GLP-1R &amp; cAMP/PKA Signaling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3a1afb1f022c15f3f97a6944aad51a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">BNFO 420 Capstone</span>
+    <span class="navbar-title">GLP-1R &amp; cAMP/PKA Signaling</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,12 +96,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal.html"> 
-<span class="menu-text">Proposal</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./introduction.html" aria-current="page"> 
 <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html"> 
+<span class="menu-text">Methods</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./results.html"> 
@@ -120,26 +121,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
-  <li><a href="#background-knowledge-on-glp-1" id="toc-background-knowledge-on-glp-1" class="nav-link" data-scroll-target="#background-knowledge-on-glp-1"><span class="header-section-number">2</span> Background Knowledge on GLP-1</a></li>
-  <li><a href="#gap-in-knowledge" id="toc-gap-in-knowledge" class="nav-link" data-scroll-target="#gap-in-knowledge"><span class="header-section-number">3</span> Gap in Knowledge</a></li>
-  <li><a href="#what-is-glp-1r" id="toc-what-is-glp-1r" class="nav-link" data-scroll-target="#what-is-glp-1r"><span class="header-section-number">4</span> What is GLP-1R?</a></li>
-  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective"><span class="header-section-number">5</span> Objective</a></li>
-  <li><a href="#research-question-and-hypothesis" id="toc-research-question-and-hypothesis" class="nav-link" data-scroll-target="#research-question-and-hypothesis"><span class="header-section-number">6</span> Research Question and Hypothesis</a></li>
-  <li><a href="#relevant-literature" id="toc-relevant-literature" class="nav-link" data-scroll-target="#relevant-literature"><span class="header-section-number">7</span> Relevant Literature</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#background-knowledge-on-glp-1" id="toc-background-knowledge-on-glp-1" class="nav-link" data-scroll-target="#background-knowledge-on-glp-1">Background Knowledge on GLP-1</a></li>
+  <li><a href="#gap-in-knowledge" id="toc-gap-in-knowledge" class="nav-link" data-scroll-target="#gap-in-knowledge">Gap in Knowledge</a></li>
+  <li><a href="#what-is-glp-1r" id="toc-what-is-glp-1r" class="nav-link" data-scroll-target="#what-is-glp-1r">What is GLP-1R?</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#research-question-and-hypothesis" id="toc-research-question-and-hypothesis" class="nav-link" data-scroll-target="#research-question-and-hypothesis">Research Question and Hypothesis</a></li>
+  <li><a href="#relevant-literature" id="toc-relevant-literature" class="nav-link" data-scroll-target="#relevant-literature">Relevant Literature</a>
   <ul class="collapse">
-  <li><a href="#key-studies-on-incretin-biology" id="toc-key-studies-on-incretin-biology" class="nav-link" data-scroll-target="#key-studies-on-incretin-biology"><span class="header-section-number">7.1</span> Key Studies on Incretin Biology</a></li>
-  <li><a href="#methodological-references" id="toc-methodological-references" class="nav-link" data-scroll-target="#methodological-references"><span class="header-section-number">7.2</span> Methodological References</a></li>
-  <li><a href="#dataset-source" id="toc-dataset-source" class="nav-link" data-scroll-target="#dataset-source"><span class="header-section-number">7.3</span> Dataset Source</a></li>
+  <li><a href="#key-studies-on-incretin-biology" id="toc-key-studies-on-incretin-biology" class="nav-link" data-scroll-target="#key-studies-on-incretin-biology">Key Studies on Incretin Biology</a></li>
+  <li><a href="#methodological-references" id="toc-methodological-references" class="nav-link" data-scroll-target="#methodological-references">Methodological References</a></li>
+  <li><a href="#dataset-source" id="toc-dataset-source" class="nav-link" data-scroll-target="#dataset-source">Dataset Source</a></li>
   </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -163,13 +167,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>GLP-1 receptor agonists like semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro) have revolutionized treatment for type 2 diabetes and obesity. However, the molecular mechanisms underlying their therapeutic effects remain incompletely understood. This project investigates how GLP-1 receptor (GLP-1R) signaling affects gene expression in metabolically active tissues using RNA-seq data from mice treated with a dual GLP-1R/GIPR agonist (mGIPR-Ab/P1). Our analysis revealed tissue-specific responses, unexpected GIPR dominance in regulating peripheral gene expression, and modest transcriptional changes in the predicted cAMP/PKA pathway.</p>
 <hr>
 </section>
-<section id="background-knowledge-on-glp-1" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="background-knowledge-on-glp-1"><span class="header-section-number">2</span> Background Knowledge on GLP-1</h2>
+<section id="background-knowledge-on-glp-1" class="level2">
+<h2 class="anchored" data-anchor-id="background-knowledge-on-glp-1">Background Knowledge on GLP-1</h2>
 <p>GLP-1 (glucagon-like peptide-1) is an incretin hormone secreted by intestinal L-cells in response to food intake. It plays a central role in glucose homeostasis and energy regulation by:</p>
 <ul>
 <li><strong>Enhancing insulin secretion</strong> from pancreatic beta cells in a glucose-dependent manner</li>
@@ -180,8 +184,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The GLP-1 receptor is a G-protein coupled receptor (GPCR) expressed in multiple tissues including pancreas, brain, heart, kidney, liver, and adipose tissue. Upon ligand binding, GLP-1R activates the <strong>cAMP/PKA signaling pathway</strong>, which drives downstream transcriptional changes. This pathway includes key genes such as PRKACA, PRKACB, and CREB1 that regulate metabolic gene expression.</p>
 <hr>
 </section>
-<section id="gap-in-knowledge" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="gap-in-knowledge"><span class="header-section-number">3</span> Gap in Knowledge</h2>
+<section id="gap-in-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="gap-in-knowledge">Gap in Knowledge</h2>
 <p>While GLP-1 drugs are clinically effective, several questions remain unanswered:</p>
 <ol type="1">
 <li><strong>Which genes are directly regulated by GLP-1R signaling</strong> in peripheral metabolic tissues like liver and fat?</li>
@@ -193,8 +197,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Understanding these mechanisms could inform the development of more targeted therapies and explain why dual GLP-1R/GIPR agonists show enhanced efficacy compared to single-receptor drugs.</p>
 <hr>
 </section>
-<section id="what-is-glp-1r" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="what-is-glp-1r"><span class="header-section-number">4</span> What is GLP-1R?</h2>
+<section id="what-is-glp-1r" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-glp-1r">What is GLP-1R?</h2>
 <p><strong>GLP-1R (Glucagon-Like Peptide-1 Receptor)</strong> is a class B GPCR that mediates the physiological effects of GLP-1 hormone. Key characteristics include:</p>
 <ul>
 <li><strong>Tissue distribution:</strong> Pancreatic islets, brain (hypothalamus, brainstem), heart, liver, adipose tissue, kidney</li>
@@ -206,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The <strong>mGIPR-Ab/P1 agonist</strong> used in this study is a dual agonist that activates both GLP-1R and GIPR, allowing us to assess combined incretin signaling effects.</p>
 <hr>
 </section>
-<section id="objective" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="objective"><span class="header-section-number">5</span> Objective</h2>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
 <p>This project aims to characterize the transcriptional response to GLP-1R signaling in liver and adipose tissue using published RNA-seq data from GEO (GSE293291). The dataset includes 60 samples across 4 genotypes, 2 treatment conditions, and 2 tissues.</p>
 <p><strong>Specific objectives include:</strong></p>
 <ol type="1">
@@ -219,8 +223,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <hr>
 </section>
-<section id="research-question-and-hypothesis" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="research-question-and-hypothesis"><span class="header-section-number">6</span> Research Question and Hypothesis</h2>
+<section id="research-question-and-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="research-question-and-hypothesis">Research Question and Hypothesis</h2>
 <p><strong>Research Question:</strong><br>
 Do cells that express GLP-1R show increased expression of downstream cAMP/PKA pathway genes in response to receptor activation?</p>
 <p><strong>Hypothesis:</strong><br>
@@ -229,10 +233,10 @@ We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upr
 <strong>Dependent Variable:</strong> Expression levels of cAMP/PKA pathway genes and genome-wide gene expression patterns</p>
 <hr>
 </section>
-<section id="relevant-literature" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="relevant-literature"><span class="header-section-number">7</span> Relevant Literature</h2>
-<section id="key-studies-on-incretin-biology" class="level3" data-number="7.1">
-<h3 data-number="7.1" class="anchored" data-anchor-id="key-studies-on-incretin-biology"><span class="header-section-number">7.1</span> Key Studies on Incretin Biology</h3>
+<section id="relevant-literature" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-literature">Relevant Literature</h2>
+<section id="key-studies-on-incretin-biology" class="level3">
+<h3 class="anchored" data-anchor-id="key-studies-on-incretin-biology">Key Studies on Incretin Biology</h3>
 <p><strong>Campbell, J. E., &amp; Drucker, D. J. (2013).</strong> Pharmacology, physiology, and mechanisms of incretin hormone action. <em>Cell Metabolism, 17</em>(6), 819-837.<br>
 - Comprehensive review of GLP-1 and GIP signaling mechanisms, tissue distribution, and therapeutic applications</p>
 <p><strong>Müller, T. D., et al.&nbsp;(2019).</strong> Glucagon-like peptide 1 (GLP-1). <em>Molecular Metabolism, 30</em>, 72-130.<br>
@@ -240,15 +244,15 @@ We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upr
 <p><strong>Holst, J. J., &amp; Rosenkilde, M. M. (2020).</strong> GIP as a therapeutic target in diabetes and obesity: Insight from incretin co-agonists. <em>Journal of Clinical Endocrinology &amp; Metabolism, 105</em>(8), e2710-e2716.<br>
 - Discusses the rationale for dual GLP-1R/GIPR agonists and the complementary roles of these receptors</p>
 </section>
-<section id="methodological-references" class="level3" data-number="7.2">
-<h3 data-number="7.2" class="anchored" data-anchor-id="methodological-references"><span class="header-section-number">7.2</span> Methodological References</h3>
+<section id="methodological-references" class="level3">
+<h3 class="anchored" data-anchor-id="methodological-references">Methodological References</h3>
 <p><strong>Ritchie, M. E., et al.&nbsp;(2015).</strong> limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research, 43</em>(7), e47.<br>
 - The statistical method (Limma) used for differential expression analysis in this project</p>
 <p><strong>Love, M. I., Huber, W., &amp; Anders, S. (2014).</strong> Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology, 15</em>(12), 550.<br>
 - Reference for normalization methods used in RNA-seq analysis</p>
 </section>
-<section id="dataset-source" class="level3" data-number="7.3">
-<h3 data-number="7.3" class="anchored" data-anchor-id="dataset-source"><span class="header-section-number">7.3</span> Dataset Source</h3>
+<section id="dataset-source" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-source">Dataset Source</h3>
 <p><strong>Zhu, Z., et al.&nbsp;(2024).</strong> GSE293291: RNA-seq analysis of liver and adipose tissue from GLP-1R and GIPR knockout mice treated with mGIPR-Ab/P1. <em>NCBI Gene Expression Omnibus.</em><br>
 - The published dataset used in this project, containing approximately 54,000 genes measured across 60 samples representing: - <strong>Genotypes:</strong> Wild-type (Glp1r fl/fl), CNS-specific GLP-1R knockout (Glp1r Wnt1-/-), CNS-specific GIPR knockout (Gipr Syn-/-) - <strong>Treatments:</strong> Vehicle control, mGIPR-Ab/P1 dual agonist - <strong>Tissues:</strong> Liver and inguinal white adipose tissue (iWAT)</p>
 
@@ -330,7 +334,7 @@ We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upr
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -658,21 +662,9 @@ We predicted that treatment with the mGIPR-Ab/P1 dual agonist would strongly upr
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>BNFO 420 • VCU</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
-  </div>
-</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

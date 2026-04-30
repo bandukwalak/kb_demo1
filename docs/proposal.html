@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proposal – BNFO 420 Capstone</title>
+<title>Proposal – GLP-1R &amp; cAMP/PKA Signaling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3a1afb1f022c15f3f97a6944aad51a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">BNFO 420 Capstone</span>
+    <span class="navbar-title">GLP-1R &amp; cAMP/PKA Signaling</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,12 +96,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./proposal.html" aria-current="page"> 
-<span class="menu-text">Proposal</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./introduction.html"> 
 <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./proposal.html" aria-current="page"> 
+<span class="menu-text">Methods</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./results.html"> 
@@ -120,18 +121,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question"><span class="header-section-number">1</span> Research question</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">2</span> Dataset(s)</a></li>
-  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis"><span class="header-section-number">3</span> Planned analysis</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">Research question</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Dataset(s)</a></li>
+  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis">Planned analysis</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -155,12 +159,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research-question" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="research-question"><span class="header-section-number">1</span> Research question</h2>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research question</h2>
 <p>GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples.</p>
 </section>
-<section id="datasets" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="datasets"><span class="header-section-number">2</span> Dataset(s)</h2>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Dataset(s)</h2>
 <ul>
 <li>Source: NCBI GEO Public Dataset (GSE293291)</li>
 <li>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291</li>
@@ -175,8 +179,8 @@ ul.task-list li input[type="checkbox"] {
 <li>License/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data.</li>
 </ul>
 </section>
-<section id="planned-analysis" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="planned-analysis"><span class="header-section-number">3</span> Planned analysis</h2>
+<section id="planned-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="planned-analysis">Planned analysis</h2>
 <p>Describe your plan in bullets:</p>
 <ul>
 <li>Data cleaning and preprocessing
@@ -217,8 +221,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="deliverables" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
 <ul>
 <li>Website sections</li>
 <li>Key figures/tables
@@ -308,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -636,21 +640,9 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>BNFO 420 • VCU</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
-  </div>
-</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Results – BNFO 420 Capstone</title>
+<title>Results – GLP-1R &amp; cAMP/PKA Signaling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3a1afb1f022c15f3f97a6944aad51a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">BNFO 420 Capstone</span>
+    <span class="navbar-title">GLP-1R &amp; cAMP/PKA Signaling</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,12 +96,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal.html"> 
-<span class="menu-text">Proposal</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./introduction.html"> 
 <span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html"> 
+<span class="menu-text">Methods</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./results.html" aria-current="page"> 
@@ -120,34 +121,45 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
-  <li><a href="#gene-expression-filtering" id="toc-gene-expression-filtering" class="nav-link" data-scroll-target="#gene-expression-filtering"><span class="header-section-number">2</span> Gene Expression Filtering</a></li>
-  <li><a href="#principal-component-analysis" id="toc-principal-component-analysis" class="nav-link" data-scroll-target="#principal-component-analysis"><span class="header-section-number">3</span> Principal Component Analysis</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#gene-expression-filtering" id="toc-gene-expression-filtering" class="nav-link" data-scroll-target="#gene-expression-filtering">Gene Expression Filtering</a></li>
+  <li><a href="#principal-component-analysis" id="toc-principal-component-analysis" class="nav-link" data-scroll-target="#principal-component-analysis">Principal Component Analysis</a>
   <ul class="collapse">
-  <li><a href="#liver-tissue" id="toc-liver-tissue" class="nav-link" data-scroll-target="#liver-tissue"><span class="header-section-number">3.1</span> Liver Tissue</a></li>
-  <li><a href="#adipose-tissue-iwat" id="toc-adipose-tissue-iwat" class="nav-link" data-scroll-target="#adipose-tissue-iwat"><span class="header-section-number">3.2</span> Adipose Tissue (iWAT)</a></li>
+  <li><a href="#liver-tissue" id="toc-liver-tissue" class="nav-link" data-scroll-target="#liver-tissue">Liver Tissue</a></li>
+  <li><a href="#adipose-tissue-iwat" id="toc-adipose-tissue-iwat" class="nav-link" data-scroll-target="#adipose-tissue-iwat">Adipose Tissue (iWAT)</a></li>
   </ul></li>
-  <li><a href="#differential-expression-analysis" id="toc-differential-expression-analysis" class="nav-link" data-scroll-target="#differential-expression-analysis"><span class="header-section-number">4</span> Differential Expression Analysis</a>
+  <li><a href="#differential-expression-analysis" id="toc-differential-expression-analysis" class="nav-link" data-scroll-target="#differential-expression-analysis">Differential Expression Analysis</a>
   <ul class="collapse">
-  <li><a href="#liver-drug-treatment-effect" id="toc-liver-drug-treatment-effect" class="nav-link" data-scroll-target="#liver-drug-treatment-effect"><span class="header-section-number">4.1</span> Liver: Drug Treatment Effect</a></li>
-  <li><a href="#liver-glp-1r-knockout-vs-control" id="toc-liver-glp-1r-knockout-vs-control" class="nav-link" data-scroll-target="#liver-glp-1r-knockout-vs-control"><span class="header-section-number">4.2</span> Liver: GLP-1R Knockout vs Control</a></li>
-  <li><a href="#liver-gipr-knockout-vs-control" id="toc-liver-gipr-knockout-vs-control" class="nav-link" data-scroll-target="#liver-gipr-knockout-vs-control"><span class="header-section-number">4.3</span> Liver: GIPR Knockout vs Control</a></li>
-  <li><a href="#adipose-tissue-drug-treatment-effect" id="toc-adipose-tissue-drug-treatment-effect" class="nav-link" data-scroll-target="#adipose-tissue-drug-treatment-effect"><span class="header-section-number">4.4</span> Adipose Tissue: Drug Treatment Effect</a></li>
+  <li><a href="#liver-drug-treatment-effect" id="toc-liver-drug-treatment-effect" class="nav-link" data-scroll-target="#liver-drug-treatment-effect">Liver: Drug Treatment Effect</a></li>
+  <li><a href="#liver-glp-1r-knockout-vs-control" id="toc-liver-glp-1r-knockout-vs-control" class="nav-link" data-scroll-target="#liver-glp-1r-knockout-vs-control">Liver: GLP-1R Knockout vs Control</a></li>
+  <li><a href="#liver-gipr-knockout-vs-control" id="toc-liver-gipr-knockout-vs-control" class="nav-link" data-scroll-target="#liver-gipr-knockout-vs-control">Liver: GIPR Knockout vs Control</a></li>
+  <li><a href="#adipose-tissue-drug-treatment-effect" id="toc-adipose-tissue-drug-treatment-effect" class="nav-link" data-scroll-target="#adipose-tissue-drug-treatment-effect">Adipose Tissue: Drug Treatment Effect</a></li>
   </ul></li>
-  <li><a href="#gene-expression-patterns" id="toc-gene-expression-patterns" class="nav-link" data-scroll-target="#gene-expression-patterns"><span class="header-section-number">5</span> Gene Expression Patterns</a>
+  <li><a href="#gene-expression-patterns" id="toc-gene-expression-patterns" class="nav-link" data-scroll-target="#gene-expression-patterns">Gene Expression Patterns</a>
   <ul class="collapse">
-  <li><a href="#top-10-differentially-expressed-genes" id="toc-top-10-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-10-differentially-expressed-genes"><span class="header-section-number">5.1</span> Top 10 Differentially Expressed Genes</a></li>
-  <li><a href="#top-3-differentially-expressed-genes" id="toc-top-3-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-3-differentially-expressed-genes"><span class="header-section-number">5.2</span> Top 3 Differentially Expressed Genes</a></li>
+  <li><a href="#top-10-differentially-expressed-genes" id="toc-top-10-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-10-differentially-expressed-genes">Top 10 Differentially Expressed Genes</a></li>
+  <li><a href="#top-3-differentially-expressed-genes" id="toc-top-3-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-3-differentially-expressed-genes">Top 3 Differentially Expressed Genes</a></li>
   </ul></li>
-  <li><a href="#summary-of-findings" id="toc-summary-of-findings" class="nav-link" data-scroll-target="#summary-of-findings"><span class="header-section-number">6</span> Summary of Findings</a></li>
+  <li><a href="#summary-of-findings" id="toc-summary-of-findings" class="nav-link" data-scroll-target="#summary-of-findings">Summary of Findings</a></li>
+  <li><a href="#biological-interpretation-what-the-top-genes-tell-us" id="toc-biological-interpretation-what-the-top-genes-tell-us" class="nav-link" data-scroll-target="#biological-interpretation-what-the-top-genes-tell-us">Biological Interpretation: What the Top Genes Tell Us</a>
+  <ul class="collapse">
+  <li><a href="#understanding-the-top-differentially-expressed-genes" id="toc-understanding-the-top-differentially-expressed-genes" class="nav-link" data-scroll-target="#understanding-the-top-differentially-expressed-genes">Understanding the Top Differentially Expressed Genes</a></li>
+  <li><a href="#why-camppka-genes-werent-significant" id="toc-why-camppka-genes-werent-significant" class="nav-link" data-scroll-target="#why-camppka-genes-werent-significant">Why cAMP/PKA Genes Weren’t Significant</a></li>
+  <li><a href="#connecting-molecular-findings-to-clinical-effects" id="toc-connecting-molecular-findings-to-clinical-effects" class="nav-link" data-scroll-target="#connecting-molecular-findings-to-clinical-effects">Connecting Molecular Findings to Clinical Effects</a></li>
+  <li><a href="#revised-understanding-of-glp-1-mechanism" id="toc-revised-understanding-of-glp-1-mechanism" class="nav-link" data-scroll-target="#revised-understanding-of-glp-1-mechanism">Revised Understanding of GLP-1 Mechanism</a></li>
+  <li><a href="#implications-for-future-research" id="toc-implications-for-future-research" class="nav-link" data-scroll-target="#implications-for-future-research">Implications for Future Research</a></li>
+  </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -171,13 +183,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>We evaluated gene expression changes across liver and adipose tissue to understand GLP-1R and GIPR signaling effects. Our analysis revealed tissue-specific responses, unexpected GIPR dominance, and modest cAMP/PKA pathway activation.</p>
 <hr>
 </section>
-<section id="gene-expression-filtering" class="level2 page-columns page-full" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="gene-expression-filtering"><span class="header-section-number">2</span> Gene Expression Filtering</h2>
+<section id="gene-expression-filtering" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="gene-expression-filtering">Gene Expression Filtering</h2>
 <p>Before conducting differential expression analysis, we filtered out low-expression genes to improve statistical reliability and reduce noise.</p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
@@ -190,11 +202,11 @@ ul.task-list li input[type="checkbox"] {
 <p>The filtering step removed ~40,000 low-expression genes, keeping only those with robust, detectable expression. This improves the reliability of differential expression testing and reduces false discovery rates.</p>
 <hr>
 </section>
-<section id="principal-component-analysis" class="level2 page-columns page-full" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="principal-component-analysis"><span class="header-section-number">3</span> Principal Component Analysis</h2>
+<section id="principal-component-analysis" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="principal-component-analysis">Principal Component Analysis</h2>
 <p>We performed PCA to validate data quality and assess whether treatment drove global gene expression patterns.</p>
-<section id="liver-tissue" class="level3 page-columns page-full" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="liver-tissue"><span class="header-section-number">3.1</span> Liver Tissue</h3>
+<section id="liver-tissue" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="liver-tissue">Liver Tissue</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -205,8 +217,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Treatment samples cluster tightly in the positive PC1 space, while vehicle controls occupy the negative space. No obvious outliers are present, confirming consistent biological replicates.</p>
 </section>
-<section id="adipose-tissue-iwat" class="level3 page-columns page-full" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="adipose-tissue-iwat"><span class="header-section-number">3.2</span> Adipose Tissue (iWAT)</h3>
+<section id="adipose-tissue-iwat" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="adipose-tissue-iwat">Adipose Tissue (iWAT)</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -219,11 +231,11 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="differential-expression-analysis" class="level2 page-columns page-full" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="differential-expression-analysis"><span class="header-section-number">4</span> Differential Expression Analysis</h2>
+<section id="differential-expression-analysis" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="differential-expression-analysis">Differential Expression Analysis</h2>
 <p>We performed four differential expression comparisons using the Limma package to identify genes significantly altered by treatment or receptor knockout.</p>
-<section id="liver-drug-treatment-effect" class="level3 page-columns page-full" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="liver-drug-treatment-effect"><span class="header-section-number">4.1</span> Liver: Drug Treatment Effect</h3>
+<section id="liver-drug-treatment-effect" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="liver-drug-treatment-effect">Liver: Drug Treatment Effect</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -241,8 +253,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="liver-glp-1r-knockout-vs-control" class="level3 page-columns page-full" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="liver-glp-1r-knockout-vs-control"><span class="header-section-number">4.2</span> Liver: GLP-1R Knockout vs Control</h3>
+<section id="liver-glp-1r-knockout-vs-control" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="liver-glp-1r-knockout-vs-control">Liver: GLP-1R Knockout vs Control</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -260,8 +272,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="liver-gipr-knockout-vs-control" class="level3 page-columns page-full" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="liver-gipr-knockout-vs-control"><span class="header-section-number">4.3</span> Liver: GIPR Knockout vs Control</h3>
+<section id="liver-gipr-knockout-vs-control" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="liver-gipr-knockout-vs-control">Liver: GIPR Knockout vs Control</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -279,8 +291,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="adipose-tissue-drug-treatment-effect" class="level3 page-columns page-full" data-number="4.4">
-<h3 data-number="4.4" class="anchored" data-anchor-id="adipose-tissue-drug-treatment-effect"><span class="header-section-number">4.4</span> Adipose Tissue: Drug Treatment Effect</h3>
+<section id="adipose-tissue-drug-treatment-effect" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="adipose-tissue-drug-treatment-effect">Adipose Tissue: Drug Treatment Effect</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -299,11 +311,11 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="gene-expression-patterns" class="level2 page-columns page-full" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="gene-expression-patterns"><span class="header-section-number">5</span> Gene Expression Patterns</h2>
+<section id="gene-expression-patterns" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="gene-expression-patterns">Gene Expression Patterns</h2>
 <p>Heatmaps reveal coordinated expression changes across the top differentially expressed genes.</p>
-<section id="top-10-differentially-expressed-genes" class="level3 page-columns page-full" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="top-10-differentially-expressed-genes"><span class="header-section-number">5.1</span> Top 10 Differentially Expressed Genes</h3>
+<section id="top-10-differentially-expressed-genes" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="top-10-differentially-expressed-genes">Top 10 Differentially Expressed Genes</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -314,8 +326,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>The dendrogram shows perfect separation between treatment and vehicle groups, confirming that the top differentially expressed genes are consistent across biological replicates.</p>
 </section>
-<section id="top-3-differentially-expressed-genes" class="level3 page-columns page-full" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="top-3-differentially-expressed-genes"><span class="header-section-number">5.2</span> Top 3 Differentially Expressed Genes</h3>
+<section id="top-3-differentially-expressed-genes" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="top-3-differentially-expressed-genes">Top 3 Differentially Expressed Genes</h3>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -325,10 +337,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <hr>
+<hr>
 </section>
 </section>
-<section id="summary-of-findings" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="summary-of-findings"><span class="header-section-number">6</span> Summary of Findings</h2>
+<section id="summary-of-findings" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-findings">Summary of Findings</h2>
 <p>Our comprehensive analysis across multiple comparisons revealed:</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -351,8 +364,67 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>These results suggest that GLP-1R signaling operates through tissue-specific mechanisms, with GIPR playing an unexpectedly central role in CNS-mediated regulation of peripheral metabolism. The modest cAMP/PKA pathway activation indicates that GLP-1 drugs may work through alternative or redundant signaling cascades.</p>
+<hr>
+</section>
+<section id="biological-interpretation-what-the-top-genes-tell-us" class="level2">
+<h2 class="anchored" data-anchor-id="biological-interpretation-what-the-top-genes-tell-us">Biological Interpretation: What the Top Genes Tell Us</h2>
+<p>While our hypothesis focused on cAMP/PKA pathway genes, the most significantly changed genes reveal important insights into how GLP-1 treatment actually remodels cellular metabolism.</p>
+<section id="understanding-the-top-differentially-expressed-genes" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-top-differentially-expressed-genes">Understanding the Top Differentially Expressed Genes</h3>
+<p>The heatmaps highlight genes with the strongest, most consistent changes across all samples. Rather than seeing our predicted cAMP/PKA genes at the top, we found genes involved in fundamental metabolic processes:</p>
+<p><strong>Protein Synthesis Machinery (Rpl8, Rpl18a, Fbl, Emg1)</strong><br>
+Multiple ribosomal proteins were upregulated, indicating that treated cells are ramping up their capacity to make new proteins. This suggests GLP-1 triggers broad metabolic reprogramming that requires building new cellular machinery rather than just activating existing pathways.</p>
+<p><strong>Metabolic Master Regulators (Hnmpl)</strong><br>
+HNF1 homeobox-like protein functions as a master switch controlling liver-specific metabolic gene networks. Its appearance as a top hit indicates GLP-1 works through hierarchical regulatory networks—activating master regulators that coordinate expression of many downstream genes simultaneously.</p>
+<p><strong>RNA Processing &amp; Translation Control (Serbp1)</strong><br>
+SERPINE1 mRNA binding protein regulates which messenger RNAs get translated into proteins. Changes in this gene suggest GLP-1 affects not just gene transcription, but also post-transcriptional control of which proteins actually get made.</p>
+<p><strong>Lipid Metabolism (Pex6)</strong><br>
+Peroxisomal biogenesis factor 6 builds the organelles responsible for breaking down fatty acids. Its upregulation directly connects to the weight loss effects of GLP-1 drugs by increasing cellular fat-burning capacity.</p>
+</section>
+<section id="why-camppka-genes-werent-significant" class="level3">
+<h3 class="anchored" data-anchor-id="why-camppka-genes-werent-significant">Why cAMP/PKA Genes Weren’t Significant</h3>
+<p>This apparent discrepancy actually reveals an important biological principle:</p>
+<p><strong>The cAMP/PKA pathway primarily works through rapid protein modification, not transcriptional changes.</strong> When GLP-1 binds its receptor:</p>
+<ol type="1">
+<li><strong>Immediate effect (seconds-minutes):</strong> cAMP rises, activating PKA proteins that are already present in the cell</li>
+<li><strong>PKA phosphorylates existing proteins</strong> — changing their activity without requiring new gene expression</li>
+<li><strong>Downstream transcriptional changes (hours):</strong> Activated proteins then regulate other genes</li>
+</ol>
+<p><strong>Our RNA-seq experiment captures step 3</strong> — the broad metabolic remodeling orchestrated by activated cAMP/PKA proteins, not the initial pathway activation itself. This explains why we see modest changes in PRKACA and PRKACB (the genes encoding PKA) but dramatic changes in their downstream targets like ribosomal proteins and metabolic regulators.</p>
+</section>
+<section id="connecting-molecular-findings-to-clinical-effects" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-molecular-findings-to-clinical-effects">Connecting Molecular Findings to Clinical Effects</h3>
+<p>These gene expression patterns help explain the therapeutic benefits of GLP-1 drugs:</p>
+<ul>
+<li><strong>Increased ribosomal proteins</strong> → Enhanced capacity for producing metabolic enzymes and receptors</li>
+<li><strong>Activation of metabolic master regulators</strong> → Coordinated reprogramming of glucose and lipid handling pathways</li>
+<li><strong>Upregulation of peroxisomal genes</strong> → Increased fat oxidation contributing to sustained weight loss</li>
+<li><strong>Tissue-specific responses</strong> → Adipose tissue shows 4× stronger transcriptional changes than liver, consistent with tissue-selective drug effects observed clinically</li>
+</ul>
+</section>
+<section id="revised-understanding-of-glp-1-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="revised-understanding-of-glp-1-mechanism">Revised Understanding of GLP-1 Mechanism</h3>
+<p>Our results suggest GLP-1 receptor agonists work not by simply activating one linear signaling pathway, but by triggering <strong>coordinated metabolic reprogramming across multiple regulatory networks</strong>. The combination of:</p>
+<ul>
+<li>Subtle cAMP/PKA transcriptional changes (because the pathway works at the protein level)</li>
+<li>Strong downstream effector gene changes (ribosomal proteins, metabolic regulators, lipid metabolism genes)</li>
+<li>Tissue-specific response magnitudes (stronger in adipose than liver)</li>
+</ul>
+<p>…indicates that the cAMP/PKA pathway functions as a <strong>signal amplifier</strong> — small initial molecular changes cascade into large-scale metabolic remodeling. This multi-level regulation may explain why GLP-1 drugs have such broad therapeutic effects on glucose control, weight loss, and cardiovascular health.</p>
+</section>
+<section id="implications-for-future-research" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-future-research">Implications for Future Research</h3>
+<p>These findings raise several important questions:</p>
+<ol type="1">
+<li><strong>Protein-level validation:</strong> Do protein levels and phosphorylation states of cAMP/PKA pathway components change even when their gene expression doesn’t?</li>
+<li><strong>Time-course dynamics:</strong> How do these transcriptional changes evolve over hours to days after treatment?</li>
+<li><strong>Functional consequences:</strong> Do the observed changes in ribosomal and metabolic genes translate into measurable differences in protein synthesis rates and metabolic flux?</li>
+<li><strong>GIPR’s unexpected role:</strong> Why does GIPR knockout cause more dramatic transcriptional changes than GLP-1R knockout, and what does this mean for dual agonist drug development?</li>
+</ol>
+<p>Our hypothesis was not disproven—it was refined. We learned that GLP-1 signaling works through layers of regulation, with rapid protein-level changes driving slower but more extensive transcriptional remodeling of cellular metabolism.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -429,7 +501,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -757,21 +829,9 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>BNFO 420 • VCU</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
-  </div>
-</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
