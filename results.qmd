@@ -1,12 +1,12 @@
 ---
 title: "Results"
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 This page presents all figures generated from our differential expression
 analysis pipeline. Each figure is organized by the question it answers,
 with a short interpretation underneath.
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ## Quality Control
 
@@ -22,29 +22,33 @@ that were actively expressed across our samples.
 
 ![Gene Filtering Bar Chart](figures/gene_filtering_summary.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
-### PCA — Liver GLP1R Cohort
+### PCA — Liver and iWAT GLP1R Cohort
 
 PCA confirmed that treated and vehicle samples separate into distinct
-clusters in liver tissue. PC1 captured 26.4% of variance and PC2
-captured 15.3%, with treatment driving the primary axis of variation.
-This validated our dataset before running differential expression.
+clusters in both tissues. The iWAT separation was more distinct than
+liver, suggesting treatment has a stronger global effect on gene
+expression in fat tissue. This validated our dataset before running
+differential expression.
+
+:::: {.columns}
+::: {.column width="50%"}
+**Liver GLP1R Cohort**
+PC1: 26.4% variance | PC2: 15.3% variance
 
 ![PCA Liver GLP1R](figures/PCA_Liver_GLP1R.png)
+:::
 
----
-
-### PCA — iWAT GLP1R Cohort
-
-Fat tissue showed even clearer separation between treated and vehicle
-samples than liver did. PC1 captured 33.6% of variance, suggesting
-treatment has a stronger global effect on gene expression in iWAT
-than in liver.
+::: {.column width="50%"}
+**iWAT GLP1R Cohort**
+PC1: 33.6% variance | PC2: 19.7% variance
 
 ![PCA iWAT GLP1R](figures/PCA_iWAT_GLP1R.png)
+:::
+::::
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ## Differential Expression
 
@@ -58,7 +62,7 @@ zero fold change. The drug is having a real but subtle effect in liver.
 
 ![Volcano Plot Liver Treatment](figures/volcano_01_treatment_liver.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ### Volcano Plot 2 — GLP1R Knockout vs Control in Liver
 
@@ -71,7 +75,7 @@ responds when GLP-1R signaling is eliminated.
 
 ![Volcano Plot GLP1R KO](figures/volcano_02_glp1r_ko_liver.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ### Volcano Plot 3 — GIPR Knockout vs Control in Liver
 
@@ -85,7 +89,7 @@ through GIPR.
 
 ![Volcano Plot GIPR KO](figures/volcano_03_gipr_ko_liver.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ### Volcano Plot 4 — iWAT Treatment Effect
 
@@ -98,7 +102,7 @@ suggesting a consistent but subtle biological signal.
 
 ![Volcano Plot iWAT Treatment](figures/volcano_04_treatment_iwat.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ## Heatmap
 
@@ -111,7 +115,7 @@ and reproducible pattern of gene expression changes across all samples.
 
 ![Heatmap Top 10 DEGs](figures/heatmap_top10.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ### Top 3 Most Significant Genes
 
@@ -122,7 +126,7 @@ the strongest and most consistent responders to the drug treatment.
 
 ![Heatmap Top 3 DEGs](figures/heatmap_top3.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ### Top 3 Most Significant Genes
 
@@ -133,7 +137,7 @@ are the strongest and most consistent responders to the drug treatment.
 
 ![Heatmap Top 3 DEGs](figures/heatmap_top3.png)
 
----
+<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
 
 ## Synthesis
 

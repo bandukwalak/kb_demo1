@@ -26,3 +26,4 @@ format:
     toc: true
     toc-location: left
     smooth-scroll: true
+    lightbox: true
