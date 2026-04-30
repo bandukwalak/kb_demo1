@@ -20,7 +20,7 @@ that were actively expressed across our samples.
 - Genes removed had expression near zero across all samples and would
   have added noise to the analysis
 
-![Gene Filtering Bar Chart](figures/figure1_gene_filtering.png)
+![Gene Filtering Bar Chart](figures/gene_filtering_summary.png)
 
 ---
 
