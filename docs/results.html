@@ -99,6 +99,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./introduction.html"> 
+<span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./results.html" aria-current="page"> 
 <span class="menu-text">Results</span></a>
   </li>  
@@ -122,15 +126,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#key-findings-draft" id="toc-key-findings-draft" class="nav-link active" data-scroll-target="#key-findings-draft"><span class="header-section-number">0.1</span> Key findings (draft)</a></li>
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">0.2</span> Figures</a></li>
-  <li><a href="#if-using-r-put-code-here-optional" id="toc-if-using-r-put-code-here-optional" class="nav-link" data-scroll-target="#if-using-r-put-code-here-optional"><span class="header-section-number">1</span> If using R, put code here (optional)</a></li>
-  <li><a href="#if-using-python-put-code-here-optional" id="toc-if-using-python-put-code-here-optional" class="nav-link" data-scroll-target="#if-using-python-put-code-here-optional"><span class="header-section-number">2</span> If using Python, put code here (optional)</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#gene-expression-filtering" id="toc-gene-expression-filtering" class="nav-link" data-scroll-target="#gene-expression-filtering"><span class="header-section-number">2</span> Gene Expression Filtering</a></li>
+  <li><a href="#principal-component-analysis" id="toc-principal-component-analysis" class="nav-link" data-scroll-target="#principal-component-analysis"><span class="header-section-number">3</span> Principal Component Analysis</a>
+  <ul class="collapse">
+  <li><a href="#liver-tissue" id="toc-liver-tissue" class="nav-link" data-scroll-target="#liver-tissue"><span class="header-section-number">3.1</span> Liver Tissue</a></li>
+  <li><a href="#adipose-tissue-iwat" id="toc-adipose-tissue-iwat" class="nav-link" data-scroll-target="#adipose-tissue-iwat"><span class="header-section-number">3.2</span> Adipose Tissue (iWAT)</a></li>
+  </ul></li>
+  <li><a href="#differential-expression-analysis" id="toc-differential-expression-analysis" class="nav-link" data-scroll-target="#differential-expression-analysis"><span class="header-section-number">4</span> Differential Expression Analysis</a>
+  <ul class="collapse">
+  <li><a href="#liver-drug-treatment-effect" id="toc-liver-drug-treatment-effect" class="nav-link" data-scroll-target="#liver-drug-treatment-effect"><span class="header-section-number">4.1</span> Liver: Drug Treatment Effect</a></li>
+  <li><a href="#liver-glp-1r-knockout-vs-control" id="toc-liver-glp-1r-knockout-vs-control" class="nav-link" data-scroll-target="#liver-glp-1r-knockout-vs-control"><span class="header-section-number">4.2</span> Liver: GLP-1R Knockout vs Control</a></li>
+  <li><a href="#liver-gipr-knockout-vs-control" id="toc-liver-gipr-knockout-vs-control" class="nav-link" data-scroll-target="#liver-gipr-knockout-vs-control"><span class="header-section-number">4.3</span> Liver: GIPR Knockout vs Control</a></li>
+  <li><a href="#adipose-tissue-drug-treatment-effect" id="toc-adipose-tissue-drug-treatment-effect" class="nav-link" data-scroll-target="#adipose-tissue-drug-treatment-effect"><span class="header-section-number">4.4</span> Adipose Tissue: Drug Treatment Effect</a></li>
+  </ul></li>
+  <li><a href="#gene-expression-patterns" id="toc-gene-expression-patterns" class="nav-link" data-scroll-target="#gene-expression-patterns"><span class="header-section-number">5</span> Gene Expression Patterns</a>
+  <ul class="collapse">
+  <li><a href="#top-10-differentially-expressed-genes" id="toc-top-10-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-10-differentially-expressed-genes"><span class="header-section-number">5.1</span> Top 10 Differentially Expressed Genes</a></li>
+  <li><a href="#top-3-differentially-expressed-genes" id="toc-top-3-differentially-expressed-genes" class="nav-link" data-scroll-target="#top-3-differentially-expressed-genes"><span class="header-section-number">5.2</span> Top 3 Differentially Expressed Genes</a></li>
+  </ul></li>
+  <li><a href="#summary-of-findings" id="toc-summary-of-findings" class="nav-link" data-scroll-target="#summary-of-findings"><span class="header-section-number">6</span> Summary of Findings</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -151,19 +171,186 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="key-findings-draft" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="key-findings-draft"><span class="header-section-number">0.1</span> Key findings (draft)</h2>
-<p>Add bullet points as you go.</p>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
+<p>We evaluated gene expression changes across liver and adipose tissue to understand GLP-1R and GIPR signaling effects. Our analysis revealed tissue-specific responses, unexpected GIPR dominance, and modest cAMP/PKA pathway activation.</p>
+<hr>
 </section>
-<section id="figures" class="level2" data-number="0.2">
-<h2 data-number="0.2" class="anchored" data-anchor-id="figures"><span class="header-section-number">0.2</span> Figures</h2>
-<p>Add figures as you generate them. Example: Blah.</p>
+<section id="gene-expression-filtering" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="gene-expression-filtering"><span class="header-section-number">2</span> Gene Expression Filtering</h2>
+<p>Before conducting differential expression analysis, we filtered out low-expression genes to improve statistical reliability and reduce noise.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/gene_filtering_summary.png" class="img-fluid figure-img column-page" style="width:85.0%"></p>
+<figcaption><strong>Figure 1. Gene expression filtering summary.</strong> Approximately 74% of genes were removed during quality control, retaining 14,152 genes in liver tissue and 14,715 genes in adipose tissue. Only genes with expression &gt; 1 in at least 5 samples were retained for downstream analysis.</figcaption>
+</figure>
+</div>
+</div>
+<p>The filtering step removed ~40,000 low-expression genes, keeping only those with robust, detectable expression. This improves the reliability of differential expression testing and reduces false discovery rates.</p>
+<hr>
 </section>
-<section id="if-using-r-put-code-here-optional" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> If using R, put code here (optional)</h1>
+<section id="principal-component-analysis" class="level2 page-columns page-full" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="principal-component-analysis"><span class="header-section-number">3</span> Principal Component Analysis</h2>
+<p>We performed PCA to validate data quality and assess whether treatment drove global gene expression patterns.</p>
+<section id="liver-tissue" class="level3 page-columns page-full" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="liver-tissue"><span class="header-section-number">3.1</span> Liver Tissue</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/PCA_Liver_GLP1R.png" class="img-fluid figure-img column-page" style="width:75.0%"></p>
+<figcaption><strong>Figure 2. PCA plot of liver GLP1R cohort.</strong> Each point represents one biological sample. Treated samples (red) separate clearly from vehicle controls (blue) along PC1 (26.4% variance) and PC2 (15.3% variance). The clean separation validates dataset quality before differential expression analysis.</figcaption>
+</figure>
+</div>
+</div>
+<p>Treatment samples cluster tightly in the positive PC1 space, while vehicle controls occupy the negative space. No obvious outliers are present, confirming consistent biological replicates.</p>
 </section>
-<section id="if-using-python-put-code-here-optional" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> If using Python, put code here (optional)</h1>
+<section id="adipose-tissue-iwat" class="level3 page-columns page-full" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="adipose-tissue-iwat"><span class="header-section-number">3.2</span> Adipose Tissue (iWAT)</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/PCA_iWAT_GLP1R.png" class="img-fluid figure-img column-page" style="width:75.0%"></p>
+<figcaption><strong>Figure 3. PCA plot of iWAT GLP1R cohort.</strong> Separation appears more pronounced than in liver tissue, with PC1 capturing 39.6% of variance and PC2 capturing 19.7%. This suggests a stronger treatment effect in fat tissue compared to liver.</figcaption>
+</figure>
+</div>
+</div>
+<p>The increased variance explained by PC1 in adipose tissue (39.6% vs 26.4% in liver) indicates that treatment has a more dominant effect on global gene expression in this tissue.</p>
+<hr>
+</section>
+</section>
+<section id="differential-expression-analysis" class="level2 page-columns page-full" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="differential-expression-analysis"><span class="header-section-number">4</span> Differential Expression Analysis</h2>
+<p>We performed four differential expression comparisons using the Limma package to identify genes significantly altered by treatment or receptor knockout.</p>
+<section id="liver-drug-treatment-effect" class="level3 page-columns page-full" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="liver-drug-treatment-effect"><span class="header-section-number">4.1</span> Liver: Drug Treatment Effect</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/volcano_01_treatment_liver.png" class="img-fluid figure-img column-page" style="width:85.0%"></p>
+<figcaption><strong>Figure 4. Volcano plot comparing drug vs vehicle in liver tissue.</strong> Each point represents a gene. Red points indicate significantly upregulated genes (8 total), blue points show downregulated genes (49 total). Purple diamonds mark hypothesis genes (GLP1R, PRKACA, PRKACB, etc.) from the cAMP/PKA pathway. Significance threshold: FDR &lt; 0.05, |log2FC| &gt; 1.</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Key findings:</strong></p>
+<ul>
+<li><strong>57 differentially expressed genes</strong> (8 up, 49 down)</li>
+<li><strong>Modest overall response</strong> — most genes cluster near zero fold change</li>
+<li><strong>cAMP/PKA pathway genes not significant</strong> — hypothesis genes (purple diamonds) fall below the significance threshold</li>
+<li><strong>Interpretation:</strong> Liver shows weak transcriptional activation in response to GLP-1 agonist treatment</li>
+</ul>
+<hr>
+</section>
+<section id="liver-glp-1r-knockout-vs-control" class="level3 page-columns page-full" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="liver-glp-1r-knockout-vs-control"><span class="header-section-number">4.2</span> Liver: GLP-1R Knockout vs Control</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/volcano_02_glp1r_ko_liver.png" class="img-fluid figure-img column-page" style="width:85.0%"></p>
+<figcaption><strong>Figure 5. Volcano plot comparing GLP-1R knockout vs control in liver.</strong> CNS-specific deletion of the GLP-1 receptor caused widespread gene expression changes. 87 genes were upregulated and 173 downregulated (260 total). cAMP/PKA genes show borderline significance.</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Key findings:</strong></p>
+<ul>
+<li><strong>260 differentially expressed genes</strong> (87 up, 173 down)</li>
+<li><strong>Stronger effect than drug treatment</strong> — removing the receptor causes more changes than activating it</li>
+<li><strong>cAMP/PKA genes at borderline significance</strong> — suggesting pathway involvement when receptor is absent</li>
+<li><strong>Interpretation:</strong> GLP-1R deletion has system-level effects beyond direct receptor activation</li>
+</ul>
+<hr>
+</section>
+<section id="liver-gipr-knockout-vs-control" class="level3 page-columns page-full" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="liver-gipr-knockout-vs-control"><span class="header-section-number">4.3</span> Liver: GIPR Knockout vs Control</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/volcano_03_gipr_ko_liver.png" class="img-fluid figure-img column-page" style="width:85.0%"></p>
+<figcaption><strong>Figure 6. Volcano plot comparing GIPR knockout vs control in liver.</strong> CNS-specific deletion of the GIP receptor produced the most dramatic transcriptional changes of any comparison, with 299 upregulated and 161 downregulated genes (460 total).</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Key findings:</strong></p>
+<ul>
+<li><strong>460 differentially expressed genes</strong> (299 up, 161 down) — largest effect observed</li>
+<li><strong>Strong global transcriptional impact</strong> — nearly double the GLP-1R knockout effect</li>
+<li><strong>Hypothesis genes remain non-significant</strong> — GIPR affects genes outside our predicted pathway</li>
+<li><strong>Interpretation:</strong> GIPR plays an unexpectedly major regulatory role in liver gene expression through CNS-mediated pathways</li>
+</ul>
+<hr>
+</section>
+<section id="adipose-tissue-drug-treatment-effect" class="level3 page-columns page-full" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="adipose-tissue-drug-treatment-effect"><span class="header-section-number">4.4</span> Adipose Tissue: Drug Treatment Effect</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/volcano_04_treatment_iwat.png" class="img-fluid figure-img column-page" style="width:85.0%"></p>
+<figcaption><strong>Figure 7. Volcano plot comparing drug vs vehicle in adipose tissue (iWAT).</strong> Fat tissue showed a stronger response than liver to the same GLP-1 agonist treatment, with 241 differentially expressed genes (49 up, 192 down).</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Key findings:</strong></p>
+<ul>
+<li><strong>241 differentially expressed genes</strong> (49 up, 192 down)</li>
+<li><strong>Stronger response than liver</strong> — 4-fold more genes affected compared to liver treatment</li>
+<li><strong>cAMP/PKA genes near significance</strong> — closer to threshold than in liver</li>
+<li><strong>Interpretation:</strong> GLP-1 signaling is tissue-specific, with adipose tissue showing enhanced sensitivity</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="gene-expression-patterns" class="level2 page-columns page-full" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="gene-expression-patterns"><span class="header-section-number">5</span> Gene Expression Patterns</h2>
+<p>Heatmaps reveal coordinated expression changes across the top differentially expressed genes.</p>
+<section id="top-10-differentially-expressed-genes" class="level3 page-columns page-full" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="top-10-differentially-expressed-genes"><span class="header-section-number">5.1</span> Top 10 Differentially Expressed Genes</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/heatmap_top10.png" class="img-fluid figure-img column-page" style="width:75.0%"></p>
+<figcaption><strong>Figure 8. Heatmap of top 10 differentially expressed genes.</strong> Treatment samples (right columns) show consistently higher expression (red) compared to vehicle controls (left columns, blue). Genes include Hnmpl, Serbp1, Rpl8, and others. Clear clustering by condition demonstrates robust, reproducible treatment effects.</figcaption>
+</figure>
+</div>
+</div>
+<p>The dendrogram shows perfect separation between treatment and vehicle groups, confirming that the top differentially expressed genes are consistent across biological replicates.</p>
+</section>
+<section id="top-3-differentially-expressed-genes" class="level3 page-columns page-full" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="top-3-differentially-expressed-genes"><span class="header-section-number">5.2</span> Top 3 Differentially Expressed Genes</h3>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="figures/heatmap_top3.png" class="img-fluid figure-img column-page" style="width:70.0%"></p>
+<figcaption><strong>Figure 9. Heatmap of top 3 most significant genes (Hnmpl, Serbp1, Rpl8).</strong> Zoomed view reinforces the pattern: treatment consistently increases expression of these genes across all samples. The effect is coordinated and reproducible.</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="summary-of-findings" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="summary-of-findings"><span class="header-section-number">6</span> Summary of Findings</h2>
+<p>Our comprehensive analysis across multiple comparisons revealed:</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Key Takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Data Quality Validated</strong> — PCA plots confirmed clean clustering by treatment with no outliers</li>
+<li><strong>Modest Liver Treatment Effect</strong> — Only 57 genes changed with drug treatment in liver</li>
+<li><strong>Tissue-Specific Responses</strong> — Adipose tissue (241 genes) responded 4× more strongly than liver (57 genes)</li>
+<li><strong>Receptor Knockout &gt; Drug Treatment</strong> — Deleting receptors caused more dramatic changes than activating them</li>
+<li><strong>GIPR Dominance</strong> — GIPR knockout produced the largest transcriptional response (460 genes)</li>
+<li><strong>cAMP/PKA Pathway Subtle</strong> — Hypothesis genes showed trends but did not reach statistical significance</li>
+</ol>
+</div>
+</div>
+<p>These results suggest that GLP-1R signaling operates through tissue-specific mechanisms, with GIPR playing an unexpectedly central role in CNS-mediated regulation of peripheral metabolism. The modest cAMP/PKA pathway activation indicates that GLP-1 drugs may work through alternative or redundant signaling cascades.</p>
 
 
 </section>
@@ -242,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bandukwalak\.github\.io\/kb_demo1\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
