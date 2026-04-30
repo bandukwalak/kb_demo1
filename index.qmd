@@ -48,12 +48,30 @@ Comparisons
 :::
 :::
 
-## What We Did
+## Abstract
 
-We analyzed a publicly available bulk RNA-seq dataset from mice treated with
-mGIPR-Ab/P1, a dual-acting GLP-1R/GIPR agonist. Our goal was to test whether
-GLP-1R activation upregulates downstream cAMP/PKA pathway genes across liver
-and inguinal white adipose tissue (iWAT).
+::: {.abstract-box}
+GLP-1 receptor agonists have become a major class of therapeutics for obesity
+and type 2 diabetes, yet the transcriptional mechanisms through which they
+exert their effects across peripheral tissues remain incompletely understood.
+This project investigates whether GLP-1R activation is associated with
+upregulation of downstream cAMP/PKA pathway genes in liver and inguinal white
+adipose tissue (iWAT) using publicly available bulk RNA-seq data from a mouse
+model.
+
+We analyzed 60 samples spanning four genotypes, two treatment conditions, and
+two tissue types using a pipeline that included log2 normalization, low-expression
+gene filtering, PCA-based quality control, and differential expression analysis
+with Limma. Our results showed that drug treatment produced modest transcriptional
+changes in liver but a stronger response in iWAT, with cAMP/PKA pathway genes
+trending in the predicted direction without reaching full statistical significance.
+Unexpectedly, CNS-specific deletion of the GIP receptor produced the largest
+number of differentially expressed genes across all comparisons, suggesting a
+previously underappreciated role for GIPR in regulating peripheral tissue gene
+expression through the brain-liver axis. These findings partially support our
+original hypothesis while revealing a more complex and tissue-specific regulatory
+landscape than initially predicted.
+:::
 
 ## Key Findings
 
@@ -70,10 +88,70 @@ differentially expressed genes with treatment than liver did.
 ::: {.finding-box}
 **GIPR knockout had the largest effect** — unexpectedly, deleting GIPR from
 CNS neurons caused more gene expression changes than either drug treatment
-or GLP-1R deletion.
+or GLP-1R deletion, pointing to an important brain-liver axis through GIPR.
 :::
 
-## Navigate the Project
+## Project Roadmap
+
+::: {.roadmap-step}
+::: {.step-number}
+1
+:::
+::: {.step-content}
+#### Download and Organize Data
+Downloaded 4 expression files from GEO (GSE293291), combined 60 samples into
+one matrix, and built a metadata table mapping each sample to its genotype,
+treatment, and tissue.
+:::
+:::
+
+::: {.roadmap-step}
+::: {.step-number}
+2
+:::
+::: {.step-content}
+#### Normalize and Filter
+Log2 transformed FPKM values and filtered 54,343 genes down to 14,152 in liver
+and 14,715 in iWAT by removing low-expression genes that would add noise.
+:::
+:::
+
+::: {.roadmap-step}
+::: {.step-number}
+3
+:::
+::: {.step-content}
+#### Quality Control with PCA
+Ran PCA to confirm samples clustered correctly by treatment group before running
+any statistics. Both tissues showed clear separation between treated and vehicle
+samples.
+:::
+:::
+
+::: {.roadmap-step}
+::: {.step-number}
+4
+:::
+::: {.step-content}
+#### Differential Expression with Limma
+Used Limma to test four comparisons — treatment effect in liver, treatment effect
+in iWAT, GLP1R knockout vs control, and GIPR knockout vs control.
+:::
+:::
+
+::: {.roadmap-step}
+::: {.step-number}
+5
+:::
+::: {.step-content}
+#### Visualize and Interpret
+Generated volcano plots for all four comparisons, a heatmap of the top 10 DEGs,
+and a gene filtering bar chart. Interpreted results in the context of our
+original hypothesis.
+:::
+:::
+
+## Explore the Project
 
 | Section | What you will find |
 |---|---|

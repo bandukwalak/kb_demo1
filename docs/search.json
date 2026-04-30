@@ -42,25 +42,32 @@
     "text": "BNFO 420 Capstone — VCU\nInvestigating how GLP-1 receptor activation affects downstream gene expression across liver and fat tissue in obese mice using bulk RNA-seq analysis."
   },
   {
-    "objectID": "index.html#what-we-did",
-    "href": "index.html#what-we-did",
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
     "title": "GLP-1R Expression and cAMP/PKA Signaling",
-    "section": "What We Did",
-    "text": "What We Did\nWe analyzed a publicly available bulk RNA-seq dataset from mice treated with mGIPR-Ab/P1, a dual-acting GLP-1R/GIPR agonist. Our goal was to test whether GLP-1R activation upregulates downstream cAMP/PKA pathway genes across liver and inguinal white adipose tissue (iWAT)."
+    "section": "Abstract",
+    "text": "Abstract\n\nGLP-1 receptor agonists have become a major class of therapeutics for obesity and type 2 diabetes, yet the transcriptional mechanisms through which they exert their effects across peripheral tissues remain incompletely understood. This project investigates whether GLP-1R activation is associated with upregulation of downstream cAMP/PKA pathway genes in liver and inguinal white adipose tissue (iWAT) using publicly available bulk RNA-seq data from a mouse model.\nWe analyzed 60 samples spanning four genotypes, two treatment conditions, and two tissue types using a pipeline that included log2 normalization, low-expression gene filtering, PCA-based quality control, and differential expression analysis with Limma. Our results showed that drug treatment produced modest transcriptional changes in liver but a stronger response in iWAT, with cAMP/PKA pathway genes trending in the predicted direction without reaching full statistical significance. Unexpectedly, CNS-specific deletion of the GIP receptor produced the largest number of differentially expressed genes across all comparisons, suggesting a previously underappreciated role for GIPR in regulating peripheral tissue gene expression through the brain-liver axis. These findings partially support our original hypothesis while revealing a more complex and tissue-specific regulatory landscape than initially predicted."
   },
   {
     "objectID": "index.html#key-findings",
     "href": "index.html#key-findings",
     "title": "GLP-1R Expression and cAMP/PKA Signaling",
     "section": "Key Findings",
-    "text": "Key Findings\n\nDrug effect was real but subtle — treated and vehicle samples separated clearly in PCA, but cAMP/PKA pathway genes did not reach strong significance.\n\n\nFat tissue responded more strongly than liver — iWAT showed more differentially expressed genes with treatment than liver did.\n\n\nGIPR knockout had the largest effect — unexpectedly, deleting GIPR from CNS neurons caused more gene expression changes than either drug treatment or GLP-1R deletion."
+    "text": "Key Findings\n\nDrug effect was real but subtle — treated and vehicle samples separated clearly in PCA, but cAMP/PKA pathway genes did not reach strong significance.\n\n\nFat tissue responded more strongly than liver — iWAT showed more differentially expressed genes with treatment than liver did.\n\n\nGIPR knockout had the largest effect — unexpectedly, deleting GIPR from CNS neurons caused more gene expression changes than either drug treatment or GLP-1R deletion, pointing to an important brain-liver axis through GIPR."
   },
   {
-    "objectID": "index.html#navigate-the-project",
-    "href": "index.html#navigate-the-project",
+    "objectID": "index.html#project-roadmap",
+    "href": "index.html#project-roadmap",
     "title": "GLP-1R Expression and cAMP/PKA Signaling",
-    "section": "Navigate the Project",
-    "text": "Navigate the Project\n\n\n\nSection\nWhat you will find\n\n\n\n\nIntroduction\nBackground, hypothesis, and dataset overview\n\n\nMethods\nPipeline, tools, and analysis approach\n\n\nResults\nAll figures with interpretation\n\n\nTeam\nWho we are and what we each contributed"
+    "section": "Project Roadmap",
+    "text": "Project Roadmap\n\n\n1\n\n\nDownload and Organize Data\nDownloaded 4 expression files from GEO (GSE293291), combined 60 samples into one matrix, and built a metadata table mapping each sample to its genotype, treatment, and tissue.\n\n\n\n\n2\n\n\nNormalize and Filter\nLog2 transformed FPKM values and filtered 54,343 genes down to 14,152 in liver and 14,715 in iWAT by removing low-expression genes that would add noise.\n\n\n\n\n3\n\n\nQuality Control with PCA\nRan PCA to confirm samples clustered correctly by treatment group before running any statistics. Both tissues showed clear separation between treated and vehicle samples.\n\n\n\n\n4\n\n\nDifferential Expression with Limma\nUsed Limma to test four comparisons — treatment effect in liver, treatment effect in iWAT, GLP1R knockout vs control, and GIPR knockout vs control.\n\n\n\n\n5\n\n\nVisualize and Interpret\nGenerated volcano plots for all four comparisons, a heatmap of the top 10 DEGs, and a gene filtering bar chart. Interpreted results in the context of our original hypothesis."
+  },
+  {
+    "objectID": "index.html#explore-the-project",
+    "href": "index.html#explore-the-project",
+    "title": "GLP-1R Expression and cAMP/PKA Signaling",
+    "section": "Explore the Project",
+    "text": "Explore the Project\n\n\n\nSection\nWhat you will find\n\n\n\n\nIntroduction\nBackground, hypothesis, and dataset overview\n\n\nMethods\nPipeline, tools, and analysis approach\n\n\nResults\nAll figures with interpretation\n\n\nTeam\nWho we are and what we each contributed"
   },
   {
     "objectID": "team.html",

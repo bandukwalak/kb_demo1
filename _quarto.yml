@@ -5,7 +5,7 @@ project:
 website:
   title: "GLP-1R & cAMP/PKA Signaling"
   navbar:
-    background: "#8B2020"
+    background: "#1a2744"
     foreground: white
     left:
       - href: index.qmd

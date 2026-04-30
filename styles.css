@@ -1,7 +1,7 @@
 body {
   font-family: 'Georgia', serif;
   color: #2c2c2c;
-  background-color: #fafafa;
+  background-color: #fdf6f8;
 }
 
 .navbar {
@@ -10,24 +10,24 @@ body {
 }
 
 h1 {
-  color: #8B2020;
+  color: #1a2744;
   font-size: 2.2em;
   margin-bottom: 10px;
 }
 
 h2 {
-  color: #8B2020;
-  border-bottom: 2px solid #e8c4c4;
+  color: #1a2744;
+  border-bottom: 2px solid #f4a7b9;
   padding-bottom: 6px;
   margin-top: 40px;
 }
 
 h3 {
-  color: #555;
+  color: #1a2744;
 }
 
 .hero {
-  background: linear-gradient(135deg, #8B2020, #c0392b);
+  background: linear-gradient(135deg, #1a2744, #2c3e6b);
   color: white;
   padding: 60px 40px;
   border-radius: 12px;
@@ -57,7 +57,7 @@ h3 {
 
 .stat-box {
   background: white;
-  border: 1px solid #e8c4c4;
+  border: 1px solid #f4a7b9;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -67,7 +67,7 @@ h3 {
 .stat-box .number {
   font-size: 2em;
   font-weight: bold;
-  color: #8B2020;
+  color: #1a2744;
 }
 
 .stat-box .label {
@@ -82,7 +82,7 @@ h3 {
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  border-left: 4px solid #8B2020;
+  border-left: 4px solid #f4a7b9;
 }
 
 .figure-card img {
@@ -98,15 +98,64 @@ h3 {
 }
 
 .finding-box {
-  background: #fff5f5;
-  border: 1px solid #e8c4c4;
+  background: #fff0f4;
+  border: 1px solid #f4a7b9;
   border-radius: 8px;
   padding: 16px 20px;
   margin: 16px 0;
 }
 
 .finding-box strong {
-  color: #8B2020;
+  color: #1a2744;
+}
+
+.abstract-box {
+  background: white;
+  border: 1px solid #f4a7b9;
+  border-radius: 12px;
+  padding: 30px 36px;
+  margin: 30px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  line-height: 1.9;
+  font-size: 1.02em;
+}
+
+.roadmap-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 12px 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  border-left: 5px solid #f4a7b9;
+}
+
+.roadmap-step .step-number {
+  background: #1a2744;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+.roadmap-step .step-content h4 {
+  margin: 0 0 4px 0;
+  color: #1a2744;
+  font-size: 1em;
+}
+
+.roadmap-step .step-content p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
 }
 
 .team-grid {
@@ -122,15 +171,23 @@ h3 {
   padding: 24px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  border-top: 4px solid #8B2020;
+  border-top: 4px solid #f4a7b9;
 }
 
 .team-card h3 {
-  color: #8B2020;
+  color: #1a2744;
   margin-bottom: 6px;
 }
 
 .team-card .role {
   font-size: 0.85em;
   color: #777;
+}
+
+a {
+  color: #1a2744;
+}
+
+a:hover {
+  color: #c0607a;
 }

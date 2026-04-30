@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3a1afb1f022c15f3f97a6944aad51a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aac70dd4d4b23d11768d9398785a1d36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,9 +127,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#glp-1r-expression-and-camppka-signaling" id="toc-glp-1r-expression-and-camppka-signaling" class="nav-link active" data-scroll-target="#glp-1r-expression-and-camppka-signaling">GLP-1R Expression and cAMP/PKA Signaling</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What We Did</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
-  <li><a href="#navigate-the-project" id="toc-navigate-the-project" class="nav-link" data-scroll-target="#navigate-the-project">Navigate the Project</a></li>
+  <li><a href="#project-roadmap" id="toc-project-roadmap" class="nav-link" data-scroll-target="#project-roadmap">Project Roadmap</a></li>
+  <li><a href="#explore-the-project" id="toc-explore-the-project" class="nav-link" data-scroll-target="#explore-the-project">Explore the Project</a></li>
   </ul>
 </nav>
 </nav>
@@ -182,9 +183,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<section id="what-we-did" class="level2">
-<h2 class="anchored" data-anchor-id="what-we-did">What We Did</h2>
-<p>We analyzed a publicly available bulk RNA-seq dataset from mice treated with mGIPR-Ab/P1, a dual-acting GLP-1R/GIPR agonist. Our goal was to test whether GLP-1R activation upregulates downstream cAMP/PKA pathway genes across liver and inguinal white adipose tissue (iWAT).</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<div class="abstract-box">
+<p>GLP-1 receptor agonists have become a major class of therapeutics for obesity and type 2 diabetes, yet the transcriptional mechanisms through which they exert their effects across peripheral tissues remain incompletely understood. This project investigates whether GLP-1R activation is associated with upregulation of downstream cAMP/PKA pathway genes in liver and inguinal white adipose tissue (iWAT) using publicly available bulk RNA-seq data from a mouse model.</p>
+<p>We analyzed 60 samples spanning four genotypes, two treatment conditions, and two tissue types using a pipeline that included log2 normalization, low-expression gene filtering, PCA-based quality control, and differential expression analysis with Limma. Our results showed that drug treatment produced modest transcriptional changes in liver but a stronger response in iWAT, with cAMP/PKA pathway genes trending in the predicted direction without reaching full statistical significance. Unexpectedly, CNS-specific deletion of the GIP receptor produced the largest number of differentially expressed genes across all comparisons, suggesting a previously underappreciated role for GIPR in regulating peripheral tissue gene expression through the brain-liver axis. These findings partially support our original hypothesis while revealing a more complex and tissue-specific regulatory landscape than initially predicted.</p>
+</div>
 </section>
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
@@ -195,11 +199,59 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Fat tissue responded more strongly than liver</strong> — iWAT showed more differentially expressed genes with treatment than liver did.</p>
 </div>
 <div class="finding-box">
-<p><strong>GIPR knockout had the largest effect</strong> — unexpectedly, deleting GIPR from CNS neurons caused more gene expression changes than either drug treatment or GLP-1R deletion.</p>
+<p><strong>GIPR knockout had the largest effect</strong> — unexpectedly, deleting GIPR from CNS neurons caused more gene expression changes than either drug treatment or GLP-1R deletion, pointing to an important brain-liver axis through GIPR.</p>
 </div>
 </section>
-<section id="navigate-the-project" class="level2">
-<h2 class="anchored" data-anchor-id="navigate-the-project">Navigate the Project</h2>
+<section id="project-roadmap" class="level2">
+<h2 class="anchored" data-anchor-id="project-roadmap">Project Roadmap</h2>
+<div class="roadmap-step">
+<div class="step-number">
+<p>1</p>
+</div>
+<section id="download-and-organize-data" class="level4 step-content">
+<h4 class="anchored" data-anchor-id="download-and-organize-data">Download and Organize Data</h4>
+<p>Downloaded 4 expression files from GEO (GSE293291), combined 60 samples into one matrix, and built a metadata table mapping each sample to its genotype, treatment, and tissue.</p>
+</section>
+</div>
+<div class="roadmap-step">
+<div class="step-number">
+<p>2</p>
+</div>
+<section id="normalize-and-filter" class="level4 step-content">
+<h4 class="anchored" data-anchor-id="normalize-and-filter">Normalize and Filter</h4>
+<p>Log2 transformed FPKM values and filtered 54,343 genes down to 14,152 in liver and 14,715 in iWAT by removing low-expression genes that would add noise.</p>
+</section>
+</div>
+<div class="roadmap-step">
+<div class="step-number">
+<p>3</p>
+</div>
+<section id="quality-control-with-pca" class="level4 step-content">
+<h4 class="anchored" data-anchor-id="quality-control-with-pca">Quality Control with PCA</h4>
+<p>Ran PCA to confirm samples clustered correctly by treatment group before running any statistics. Both tissues showed clear separation between treated and vehicle samples.</p>
+</section>
+</div>
+<div class="roadmap-step">
+<div class="step-number">
+<p>4</p>
+</div>
+<section id="differential-expression-with-limma" class="level4 step-content">
+<h4 class="anchored" data-anchor-id="differential-expression-with-limma">Differential Expression with Limma</h4>
+<p>Used Limma to test four comparisons — treatment effect in liver, treatment effect in iWAT, GLP1R knockout vs control, and GIPR knockout vs control.</p>
+</section>
+</div>
+<div class="roadmap-step">
+<div class="step-number">
+<p>5</p>
+</div>
+<section id="visualize-and-interpret" class="level4 step-content">
+<h4 class="anchored" data-anchor-id="visualize-and-interpret">Visualize and Interpret</h4>
+<p>Generated volcano plots for all four comparisons, a heatmap of the top 10 DEGs, and a gene filtering bar chart. Interpreted results in the context of our original hypothesis.</p>
+</section>
+</div>
+</section>
+<section id="explore-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="explore-the-project">Explore the Project</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
