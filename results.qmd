@@ -1,6 +1,6 @@
 ---
 title: "Results"
-<hr style="border: none; border-top: 2px solid #f4a7b9; margin: 40px 0;">
+---
 
 This page presents all figures generated from our differential expression
 analysis pipeline. Each figure is organized by the question it answers,
