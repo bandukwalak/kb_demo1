@@ -104,11 +104,3 @@ elevated downstream cAMP/PKA pathway activity and whether treatment enhances thi
 Acknowledge limitations such as lack of single-cell resolution and protein-level validation. 
 Ensure reproducibility by documenting code, exporting results, and maintaining a structured analysis pipeline.
 
-
-
-
-## Where to find things
-- **Scripts:** `scripts/`
-- **Data notes:** `data/README.md`
-- **Figures:** `figures/`
-- **Citations:** `references.bib`
