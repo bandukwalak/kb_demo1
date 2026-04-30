@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "proposal.html",
-    "href": "proposal.html",
-    "title": "Proposal",
-    "section": "",
-    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
-  },
-  {
-    "objectID": "proposal.html#research-question",
-    "href": "proposal.html#research-question",
-    "title": "Proposal",
-    "section": "",
-    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
-  },
-  {
-    "objectID": "proposal.html#datasets",
-    "href": "proposal.html#datasets",
-    "title": "Proposal",
-    "section": "Dataset(s)",
-    "text": "Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables:\n\nTissue type\nGenotype\nTreatment type\nGene expression measurements\n\nLicense/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
-  },
-  {
-    "objectID": "proposal.html#planned-analysis",
-    "href": "proposal.html#planned-analysis",
-    "title": "Proposal",
-    "section": "Planned analysis",
-    "text": "Planned analysis\nDescribe your plan in bullets:\n\nData cleaning and preprocessing\n\nCombine expression files into one dataset\nMatch metadata to expression matrix (GSM IDs)\nLog2 transformation and filtering of low-expression genes\nRemove zero-variance genes before analysis\n\nCleaning/QC\n\nPerform PCA to identify clustering and outliers\nEvaluate variance explained by principal components\nCheck separation by treatment and genotype\n\nVisualizations\n\nPCA plots for QC\nVolcano plots for differential expression\nHeatmaps of top differentially expressed genes\n\nStatistical/ML approach\n\nBuild design matrix based on genotype, treatment, and tissues\nFit linear model using limma\nIdentify differentially expressed genes\n\nValidation & Intrepretation\n\nCompare treated vs untreated groups\n\nPeptide Treatment: mGIPR-Ab/P1\n\nVehicle Treatment\n\nFocus on balanced comaprisons\nInterpret results in context of GLP-1R and cAMP/PKA pathway."
-  },
-  {
-    "objectID": "proposal.html#deliverables",
-    "href": "proposal.html#deliverables",
-    "title": "Proposal",
-    "section": "Deliverables",
-    "text": "Deliverables\n\nWebsite sections\nKey figures/tables\n\nPCA Plot for QC\nVolcano Plot\nHeatmaps\nDifferential Expression Results Table\n\nAny optional stretch goals"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GLP-1R Expression and cAMP/PKA Signaling",
@@ -68,34 +33,6 @@
     "title": "GLP-1R Expression and cAMP/PKA Signaling",
     "section": "Explore the Project",
     "text": "Explore the Project\n\n\n\nSection\nWhat you will find\n\n\n\n\nIntroduction\nBackground, hypothesis, and dataset overview\n\n\nMethods\nPipeline, tools, and analysis approach\n\n\nResults\nAll figures with interpretation\n\n\nTeam\nWho we are and what we each contributed"
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Team",
-    "section": "",
-    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
-  },
-  {
-    "objectID": "team.html#team-members",
-    "href": "team.html#team-members",
-    "title": "Team",
-    "section": "",
-    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
-  },
-  {
-    "objectID": "team.html#individual-contributions",
-    "href": "team.html#individual-contributions",
-    "title": "Team",
-    "section": "Individual Contributions",
-    "text": "Individual Contributions\nEach team member contributed to different aspects of the analysis pipeline, presentation, and website development:\n\nData Acquisition & Pipeline Development\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nMariya Dehnuwala\nDataset selection and GEO download; Script 03 (PCA plots); Heatmap generation\n\n\nKhadeeja Bandukwala\nScript 01 (metadata organization); Script 04 (Limma differential expression)\n\n\nZoya Akhtar\nScript 02 (normalization and filtering); Website development\n\n\nCourtney Sartor\nScript 05 (Volcano plots); Synthesis and interpretation slides\n\n\n\n\n\nPresentation & Communication\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nSaja Al Jariri\nSlide deck design and layout; GLP-1R background, hypothesis, and analysis pipeline slides\n\n\nCourtney Sartor\nSynthesis and interpretation slides\n\n\nZoya Akhtar\nWebsite development and documentation"
-  },
-  {
-    "objectID": "team.html#analysis-pipeline-overview",
-    "href": "team.html#analysis-pipeline-overview",
-    "title": "Team",
-    "section": "Analysis Pipeline Overview",
-    "text": "Analysis Pipeline Overview\nOur team built a complete RNA-seq analysis pipeline from scratch:\n\nData Acquisition (Mariya) — Downloaded and organized 60 samples from GEO accession GSE293291\nMetadata Organization (Khadeeja) — Created sample annotation table linking files to experimental conditions\nNormalization & Filtering (Zoya) — Quality control and gene filtering (54,343 → 14,152 genes)\nExploratory Analysis (Mariya) — PCA plots to validate data quality and sample clustering\nDifferential Expression (Khadeeja) — Limma analysis across four experimental comparisons\nVisualization (Courtney & Mariya) — Volcano plots and heatmaps of key findings\nInterpretation & Communication (Courtney & Saja) — Scientific synthesis and presentation design\nWebsite Development (Zoya) — Project documentation and results dissemination"
   },
   {
     "objectID": "results.html",
@@ -194,5 +131,68 @@
     "title": "Introduction",
     "section": "Relevant Literature",
     "text": "Relevant Literature\n\nKey Studies on Incretin Biology\nCampbell, J. E., & Drucker, D. J. (2013). Pharmacology, physiology, and mechanisms of incretin hormone action. Cell Metabolism, 17(6), 819-837.\n- Comprehensive review of GLP-1 and GIP signaling mechanisms, tissue distribution, and therapeutic applications\nMüller, T. D., et al. (2019). Glucagon-like peptide 1 (GLP-1). Molecular Metabolism, 30, 72-130.\n- Detailed overview of GLP-1 biology, including CNS-mediated metabolic effects and receptor signaling pathways\nHolst, J. J., & Rosenkilde, M. M. (2020). GIP as a therapeutic target in diabetes and obesity: Insight from incretin co-agonists. Journal of Clinical Endocrinology & Metabolism, 105(8), e2710-e2716.\n- Discusses the rationale for dual GLP-1R/GIPR agonists and the complementary roles of these receptors\n\n\nMethodological References\nRitchie, M. E., et al. (2015). limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Research, 43(7), e47.\n- The statistical method (Limma) used for differential expression analysis in this project\nLove, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biology, 15(12), 550.\n- Reference for normalization methods used in RNA-seq analysis\n\n\nDataset Source\nZhu, Z., et al. (2024). GSE293291: RNA-seq analysis of liver and adipose tissue from GLP-1R and GIPR knockout mice treated with mGIPR-Ab/P1. NCBI Gene Expression Omnibus.\n- The published dataset used in this project, containing approximately 54,000 genes measured across 60 samples representing: - Genotypes: Wild-type (Glp1r fl/fl), CNS-specific GLP-1R knockout (Glp1r Wnt1-/-), CNS-specific GIPR knockout (Gipr Syn-/-) - Treatments: Vehicle control, mGIPR-Ab/P1 dual agonist - Tissues: Liver and inguinal white adipose tissue (iWAT)"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
+  },
+  {
+    "objectID": "team.html#team-members",
+    "href": "team.html#team-members",
+    "title": "Team",
+    "section": "",
+    "text": "This project was completed by a team of five students in BNFO 420 Capstone:\n\nZoya Akhtar\nSaja Al Jariri\nMariya Dehnuwala\nCourtney Sartor\nKhadeeja Bandukwala"
+  },
+  {
+    "objectID": "team.html#individual-contributions",
+    "href": "team.html#individual-contributions",
+    "title": "Team",
+    "section": "Individual Contributions",
+    "text": "Individual Contributions\nEach team member contributed to different aspects of the analysis pipeline, presentation, and website development:\n\nData Acquisition & Pipeline Development\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nMariya Dehnuwala\nDataset selection and GEO download; Script 03 (PCA plots); Heatmap generation\n\n\nKhadeeja Bandukwala\nScript 01 (metadata organization); Script 04 (Limma differential expression)\n\n\nZoya Akhtar\nScript 02 (normalization and filtering); Website development\n\n\nCourtney Sartor\nScript 05 (Volcano plots); Synthesis and interpretation slides\n\n\n\n\n\nPresentation & Communication\n\n\n\n\n\n\n\nTeam Member\nContribution\n\n\n\n\nSaja Al Jariri\nSlide deck design and layout; GLP-1R background, hypothesis, and analysis pipeline slides\n\n\nCourtney Sartor\nSynthesis and interpretation slides\n\n\nZoya Akhtar\nWebsite development and documentation"
+  },
+  {
+    "objectID": "team.html#analysis-pipeline-overview",
+    "href": "team.html#analysis-pipeline-overview",
+    "title": "Team",
+    "section": "Analysis Pipeline Overview",
+    "text": "Analysis Pipeline Overview\nOur team built a complete RNA-seq analysis pipeline from scratch:\n\nData Acquisition (Mariya) — Downloaded and organized 60 samples from GEO accession GSE293291\nMetadata Organization (Khadeeja) — Created sample annotation table linking files to experimental conditions\nNormalization & Filtering (Zoya) — Quality control and gene filtering (54,343 → 14,152 genes)\nExploratory Analysis (Mariya) — PCA plots to validate data quality and sample clustering\nDifferential Expression (Khadeeja) — Limma analysis across four experimental comparisons\nVisualization (Courtney & Mariya) — Volcano plots and heatmaps of key findings\nInterpretation & Communication (Courtney & Saja) — Scientific synthesis and presentation design\nWebsite Development (Zoya) — Project documentation and results dissemination"
+  },
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
+  },
+  {
+    "objectID": "proposal.html#research-question",
+    "href": "proposal.html#research-question",
+    "title": "Proposal",
+    "section": "",
+    "text": "GLP-1 receptor signaling may regulate downstream genes involved in the cAMP/PKA pathway. In this project, we analyze publicly available data to evaluate whether tissues with higher GLP-1R expression show greater downstream pathway gene activity and whether treatment is associated with increased expression of GLP-1R and its downstream signalling genes compared with untreated samples."
+  },
+  {
+    "objectID": "proposal.html#datasets",
+    "href": "proposal.html#datasets",
+    "title": "Proposal",
+    "section": "Dataset(s)",
+    "text": "Dataset(s)\n\nSource: NCBI GEO Public Dataset (GSE293291)\nhttps://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293291\nSample size: 60 samples\nKey variables:\n\nTissue type\nGenotype\nTreatment type\nGene expression measurements\n\nLicense/usage: The dataset is publicly available through GEO and includes downloadable processed expression files as well as raw data in SRA. The GEO accession page does not list a separate explicit reuse license, so we cite the GEO accession page when using the data."
+  },
+  {
+    "objectID": "proposal.html#planned-analysis",
+    "href": "proposal.html#planned-analysis",
+    "title": "Proposal",
+    "section": "Planned analysis",
+    "text": "Planned analysis\nDescribe your plan in bullets:\n\nData cleaning and preprocessing\n\nCombine expression files into one dataset\nMatch metadata to expression matrix (GSM IDs)\nLog2 transformation and filtering of low-expression genes\nRemove zero-variance genes before analysis\n\nCleaning/QC\n\nPerform PCA to identify clustering and outliers\nEvaluate variance explained by principal components\nCheck separation by treatment and genotype\n\nVisualizations\n\nPCA plots for QC\nVolcano plots for differential expression\nHeatmaps of top differentially expressed genes\n\nStatistical/ML approach\n\nBuild design matrix based on genotype, treatment, and tissues\nFit linear model using limma\nIdentify differentially expressed genes\n\nValidation & Intrepretation\n\nCompare treated vs untreated groups\n\nPeptide Treatment: mGIPR-Ab/P1\n\nVehicle Treatment\n\nFocus on balanced comaprisons\nInterpret results in context of GLP-1R and cAMP/PKA pathway."
+  },
+  {
+    "objectID": "proposal.html#deliverables",
+    "href": "proposal.html#deliverables",
+    "title": "Proposal",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nWebsite sections\nKey figures/tables\n\nPCA Plot for QC\nVolcano Plot\nHeatmaps\nDifferential Expression Results Table\n\nAny optional stretch goals"
   }
 ]
