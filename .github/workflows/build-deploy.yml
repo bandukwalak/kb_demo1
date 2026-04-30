@@ -8,9 +8,6 @@ on:
 permissions:
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -34,10 +31,10 @@ jobs:
       - name: Render Quarto site
         run: quarto render
 
-      - name: Commit and push docs
+      - name: Commit rendered docs
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
           git add docs/
-          git diff --staged --quiet || git commit -m "render site"
+          git diff --staged --quiet || git commit -m "auto render docs"
           git push origin main
